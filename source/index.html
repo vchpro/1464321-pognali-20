@@ -11,46 +11,44 @@
       <a class="page-header__logo header-logo">
         <img src="img/htmlacademy.svg" alt="Погнали?">
       </a>
-      <div class="page-header__menu header-menu">
-        <span class="header-menu__line"></span>
-        <span class="header-menu__line"></span>
-      </div>
+      <button class="page-header__menu header-menu"></button>
     </header>
 
     <main>
       <div class="promo">
-        <h2 class="promo__heading">В путешествие с крутыми попутчиками!</h2>
+        <p class="promo__phrase">В путешествие с крутыми попутчиками!</p>
         <div class="promo-buttons">
-          <button type="button" class="promo-buttons__phone"></button>
-          <button type="button" class="promo-buttons__mail"></button>
-          <button type="button" class="promo-buttons__auth">Авторизация</button>
+          <a href="#" class="promo-buttons__phone">
+            <span class="visually-hidden">Позвонить нам</span>
+          </a>
+          <a href="#" class="promo-buttons__mail"></a>
+          <span class="visually-hidden">Написать нам</span>
+          <a href="#" class="promo-buttons__auth">Авторизация</a>
         </div>
 
         <div class="promo-quote">
-          <blockquote cite="promo-quote__text">«Лучшее приложение, что я видел в жизни!»</blockquote>
-          <cite class="promo-quote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+          <blockquote cite="quote">
+            <p class="quote__text">«Лучшее приложение, что я видел в жизни!»</p>
+            <cite class="quote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+          </blockquote>
         </div>
 
-        <div class="promo-guide">
-          <div class="promo-guide__step promo-guide__step--first guide-step">
-            <span class="guide-step__text">Выберите направление</span>
-          </div>
-
-          <div class="promo-guide__step promo-guide__step--second guide-step">
+        <ol class="promo-guide">
+          <li class="promo-guide__step guide-step">
             <span class="guide-step__text">Изучите идеи путешественников</span>
-          </div>
+          </li>
 
-          <div class="promo-guide__step promo-guide__step--third guide-step">
+          <li class="promo-guide__step guide-step">
             <span class="guide-step__text">Находите тех, кто похож на вас</span>
-          </div>
+          </li>
 
-          <div class="promo-guide__step promo-guide__step--fourth guide-step">
+          <li class="promo-guide__step guide-step">
             <span class="guide-step__text">Находите тех, кто похож на вас</span>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
 
-      <div class="about">
+      <section class="about">
         <h2 class="about__heading">О сервисе</h2>
         <p class="about__content">
           Любое путешествие веселее
@@ -67,7 +65,7 @@
           Делитесь своими идеями путешествий и
           черпайте вдохновение в чужих.
         </p>
-      </div>
+      </section>
 
       <div class="directions">
         <h2 class="directions__heading">Направления</h2>
@@ -112,13 +110,15 @@
 
         <p class="companions__about companions__about--accent">Теперь можно легко найти единомышленников!</p>
 
-        <ul class="companions__list">
-          <li class="companions__list__item promo-companion">
+        <ul class="companions-list">
+          <li class="companions-list__item promo-companion">
             <div class="promo-companion__level companion-level">
               <span class="companion-level__count">99</span>
             </div>
 
-            <ul class="companions__list__item__countries-list promo-countries">
+            <img src="img/htmlacademy.svg" alt="Таня Фирсова" class="promo-companion__photo">
+
+            <ul class="promo-countries">
               <li class="promo-countries__item">
                 <span class="visually-hidden">Шриланка</span>
               </li>
@@ -133,7 +133,7 @@
             </ul>
 
             <h3 class="promo-companion__name promo-companion__name--online">Таня Фирсова</h3>
-            <textarea class="promo-companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>
+            <span class="promo-companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
 
             <ul class="companions__list__item__transport-list promo-companion-transport">
               <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport-item">
@@ -154,12 +154,14 @@
             </ul>
           </li>
 
-          <li class="companions__list__item promo-companion">
+          <li class="companions-list__item promo-companion">
             <div class="promo-companion__level companion-level">
               <span class="companion-level__count">80</span>
             </div>
 
-            <ul class="companions__list__item__countries-list promo-countries">
+            <img src="img/htmlacademy.svg" alt="Петя Демин" class="promo-companion__photo">
+
+            <ul class="promo-countries">
               <li class="promo-countries__item">
                 <span class="visually-hidden">Бельгия</span>
               </li>
@@ -170,7 +172,7 @@
             </ul>
 
             <h3 class="promo-companion__name promo-companion__name--online">Петя Демин</h3>
-            <textarea class="promo-companion__tags">#бургер #бар #футбол #концерт #крафт</textarea>
+            <span class="promo-companion__tags">#бургер #бар #футбол #концерт #крафт</span>
 
             <ul class="companions__list__item__transport-list promo-companion-transport">
               <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport">
@@ -198,17 +200,17 @@
         <h2 class="add-profile__heading">Добавьте свой профиль</h2>
 
         <ul class="add-profile__tariff-list tariff-list">
-          <li class="tariff-list__item tariff-list__item--first tariff">
+          <li class="tariff-list__item tariff">
             <span class="tariff__service">Базовое размещение</span>
             <span class="tariff__price">Бесплатно</span>
           </li>
 
-          <li class="tariff-list__item tariff-list__item--second tariff">
+          <li class="tariff-list__item tariff">
             <span class="tariff__service">Вывод на первых позициях</span>
             <span class="tariff__price">99 руб./мес</span>
           </li>
 
-          <li class="tariff-list__item tariff-list__item--third tariff ">
+          <li class="tariff-list__item tariff ">
             <span class="tariff__service">Кастомный цвет карточки</span>
             <span class="tariff__price">59 руб./мес</span>
           </li>
@@ -225,15 +227,15 @@
 
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item social social--facebook">
-          <span class="visually-hidden">Facebook</span>
+          <a href="#" class="visually-hidden">Facebook</a>
         </li>
 
         <li class="social-list__item social social--vk">
-          <span class="visually-hidden">VK</span>
+          <a href="#" class="visually-hidden">VK</a>
         </li>
 
         <li class="social-list__item social social--instagram">
-          <span class="visually-hidden">Instagram</span>
+          <a href="#" class="visually-hidden">Instagram</a>
         </li>
       </ul>
 

@@ -7,7 +7,6 @@
   <body>
 
     <header class="page-header">
-      <h1 class="visually-hidden">Погнали?</h1>
       <a class="page-header__logo header-logo">
         <img src="img/htmlacademy.svg" alt="Погнали?">
       </a>
@@ -15,6 +14,8 @@
         <span class="header-menu__line"></span>
         <span class="header-menu__line"></span>
       </div>
+
+      <h1 class="page-header__heading">Попутчики</h1>
     </header>
 
     <main>
@@ -24,12 +25,13 @@
 
       <div class="users">
         <h2 class="visually-hidden">Пользователи</h2>
-        <ul class="users__list">
-          <li class="users__list__item user">
+        <ul class="users-list">
+          <li class="users-list__item user">
+            <img src="img/htmlacademy.svg" alt="Таня Фирсова" class="user__photo">
             <h3 class="user__name">Таня Фирсова</h3>
-            <span class="user__likes-count">1,5 М</span>
+            <button type="button" class="user__like">1,5 М</button>
 
-            <textarea class="user__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>
+            <span class="user__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
             <div class="user__want-visit want-visit">
               <h4 class="want-visit__heading">хочет посетить:</h4>
 
@@ -43,19 +45,19 @@
             </div>
 
               <ul class="transport-list">
-                <li class="transport-list__item transport-list__item--selected want-transport">
+                <li class="transport-list__item transport-list__item--selected">
                   <span class="visually-hidden">На самолете</span>
                 </li>
 
-                <li class="transport-list__item want-transport">
+                <li class="transport-list__item">
                   <span class="visually-hidden">На автобусе</span>
                 </li>
 
-                <li class="transport-list__item want-transport">
+                <li class="transport-list__item">
                   <span class="visually-hidden">На велосипеде</span>
                 </li>
 
-                <li class="transport-list__item want-transport">
+                <li class="transport-list__item">
                   <span class="visually-hidden">Пешком</span>
                 </li>
               </ul>
@@ -66,11 +68,12 @@
 
               <a href="#" class="user__invite">Позвать!</a>
           </li>
-          <li class="users__list__item user">
+          <li class="users-list__item user">
+            <img src="img/htmlacademy.svg" alt="Петя Демин" class="user__photo">
             <h3 class="user__name">Петя Демин</h3>
-            <span class="user__likes-count">1500</span>
+            <button type="button" class="user__like">1500</button>
 
-            <textarea class="user__tags">#бургер #бар #футбол #концерт #крафт</textarea>
+            <span class="user__tags">#бургер #бар #футбол #концерт #крафт</span>
             <div class="user__want-visit want-visit">
               <h4 class="want-visit__heading">хочет посетить:</h4>
 
@@ -82,19 +85,19 @@
             </div>
 
               <ul class="transport-list">
-                <li class="transport-list__item transport-list__item--selected want-transport">
+                <li class="transport-list__item transport-list__item--selected">
                   <span class="visually-hidden">На самолете</span>
                 </li>
 
-                <li class="transport-list__item transport-list__item--selected want-transport">
+                <li class="transport-list__item transport-list__item--selected">
                   <span class="visually-hidden">На автобусе</span>
                 </li>
 
-                <li class="transport-list__item want-transport">
+                <li class="transport-list__item">
                   <span class="visually-hidden">На велосипеде</span>
                 </li>
 
-                <li class="transport-list__item transport-list__item--selected want-transport">
+                <li class="transport-list__item transport-list__item--selected">
                   <span class="visually-hidden">Пешком</span>
                 </li>
               </ul>
@@ -105,11 +108,12 @@
 
               <a href="#" class="user__invite">Позвать!</a>
           </li>
-          <li class="users__list__item user">
+          <li class="users-list__item user">
+            <img src="img/htmlacademy.svg" alt="Марк Смолов" class="user__photo">
             <h3 class="user__name">Марк Смолов</h3>
-            <span class="user__likes-count">170</span>
+            <button type="button" class="user__like">170</button>
 
-            <textarea class="user__tags">#рэп #тату #хайпбист #кроссовки #суприм</textarea>
+            <span class="user__tags">#рэп #тату #хайпбист #кроссовки #суприм</span>
             <div class="want-visit">
               <h4 class="want-visit__heading">хочет посетить:</h4>
 
@@ -123,19 +127,19 @@
             </div>
 
               <ul class="transport-list">
-                <li class="transport-list__item transport-list__item--selected want-transport">
+                <li class="transport-list__item transport-list__item--selected">
                   <span class="visually-hidden">На самолете</span>
                 </li>
 
-                <li class="transport-list__item want-transport">
+                <li class="transport-list__item">
                   <span class="visually-hidden">На автобусе</span>
                 </li>
 
-                <li class="transport-list__item transport-list__item--selected want-transport">
+                <li class="transport-list__item transport-list__item--selected">
                   <span class="visually-hidden">На велосипеде</span>
                 </li>
 
-                <li class="transport-list__item want-transport">
+                <li class="transport-list__item">
                   <span class="visually-hidden">Пешком</span>
                 </li>
               </ul>
@@ -146,11 +150,12 @@
 
               <a href="#" class="user__invite">Позвать!</a>
           </li>
-          <li class="users__list__item user">
+          <li class="users-list__item user">
+            <img src="img/htmlacademy.svg" alt="Лариса Роговая" class="user__photo">
             <h3 class="user__name">Лариса Роговая</h3>
-            <span class="user__likes-count">23</span>
+            <button type="button" class="user__like">23</button>
 
-            <textarea class="user__tags">#образование #карьера #учеба #линкедин</textarea>
+            <span class="user__tags">#образование #карьера #учеба #линкедин</span>
             <div class="want-visit">
               <h4 class="want-visit__heading">хочет посетить:</h4>
 
@@ -162,19 +167,19 @@
             </div>
 
               <ul class="transport-list">
-                <li class="transport-list__item transport-list__item--selected want-transport">
+                <li class="transport-list__item transport-list__item--selected">
                   <span class="visually-hidden">На самолете</span>
                 </li>
 
-                <li class="transport-list__item transport-list__item--selected want-transport">
+                <li class="transport-list__item transport-list__item--selected">
                   <span class="visually-hidden">На автобусе</span>
                 </li>
 
-                <li class="transport-list__item want-transport">
+                <li class="transport-list__item">
                   <span class="visually-hidden">На велосипеде</span>
                 </li>
 
-                <li class="transport-list__item want-transport">
+                <li class="transport-list__item">
                   <span class="visually-hidden">Пешком</span>
                 </li>
               </ul>
@@ -208,15 +213,15 @@
 
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item social social--facebook">
-          <span class="visually-hidden">Facebook</span>
+          <a href="#" class="visually-hidden">Facebook</a>
         </li>
 
         <li class="social-list__item social social--vk">
-          <span class="visually-hidden">VK</span>
+          <a href="#" class="visually-hidden">VK</a>
         </li>
 
         <li class="social-list__item social social--instagram">
-          <span class="visually-hidden">Instagram</span>
+          <a href="#" class="visually-hidden">Instagram</a>
         </li>
       </ul>
 
