@@ -7,29 +7,27 @@
   <body>
 
     <header class="page-header">
-      <h1 class="visually-hidden">Погнали?</h1>
-      <a class="page-header__logo header-logo">
+      <a href="index.html" class="page-header__logo header-logo">
         <img src="" alt="Погнали?">
       </a>
       <button class="page-header__menu header-menu">
         <span class="visually-hidden">Меню</span>
       </button>
 
-      <article class="page-menu">
-        <h2 class="visually-hidden">Меню</h2>
+      <div class="page-menu">
 
         <nav class="page-nav">
           <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">О сервисе</a>
+            <li>
+              <a href="index.html" class="nav-list__link">О сервисе</a>
             </li>
 
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">Направления</a>
+            <li>
+              <a class="nav-list__link nav-list__link--active">Направления</a>
             </li>
 
-            <li class="nav-item">
-              <a href="photo.html" class="nav-item__link">Попутчики</a>
+            <li>
+              <a href="photo.html" class="nav-list__link">Попутчики</a>
             </li>
           </ul>
         </nav>
@@ -37,195 +35,284 @@
         <a href="" class="page-menu__auth">Авторизация</a>
 
         <ul class="page-contacts">
-          <li class="page-contact">
-            <a href="tel:88005558628" class="page-contact__link">8 800 555-86-28</a>
+          <li>
+            <a href="tel:88005558628" class="page-contacts__link">8 800 555-86-28</a>
           </li>
 
-          <li class="page-contact">
-            <a href="mailto:mail@htmlacademy.ru" class="page-contact__link">mail@htmlacademy.ru</a>
+          <li>
+            <a href="mailto:mail@htmlacademy.ru" class="page-contacts__link">mail@htmlacademy.ru</a>
           </li>
         </ul>
 
-        <ul class="page-socialy">
-          <li class="page-social">
+        <ul class="page-social">
+          <li>
             <a href="#" class="page-social__link">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
 
-          <li class="page-social">
+          <li>
             <a href="#" class="page-social__link">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
 
-          <li class="page-social">
+          <li>
             <a href="#" class="page-social__link">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
         </ul>
-      </article>
+      </div>
+
+      <h1 class="page-header__heading">Попутчики</h1>
     </header>
 
     <main>
-      <div class="users-filter">
         <form class="users-filter-form">
-          <ul class="users-filter-form__list hobby-filter">
+
+          <section class="country-filter">
+            <h2 class="country-filter__heading">Фильтрация по странам:</h2>
+            <ul class="continent-list">
+              <li>
+                <a class="continent-list__item continent-list__item--active" href="europe">Европа</a>
+              </li>
+              <li>
+                <a href="asian" class="continent-list__item">Азия</a>
+              </li>
+              <li>
+                <a href="america" class="continent-list__item">Америка</a>
+              </li>
+              <li>
+                <a href="islands" class="continent-list__item">Острова</a>
+              </li>
+            </ul>
+
+            <ul class="letters-list">
+              <li>
+                <a href="#" class="letter-list__item">А</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Б</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">В</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Г</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Д</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Е</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">З</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">И</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">К</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Л</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">М</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Н</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">О</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">П</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Р</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">С</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Т</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">У</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Ф</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Х</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Ч</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Ш</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">З</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Ю</a>
+              </li>
+
+              <li>
+                <a href="#" class="letter-list__item">Я</a>
+              </li>
+            </ul>
+
+            <ul class="countries-list">
+              <li class="countries-list-item">
+                <a href="europe/australia" class="countries-list-item__link">Австралия</a>
+              </li>
+
+              <li class="countries-list-item">
+                <a href="europe/austria" class="countries-list-item__link">Австрия</a>
+              </li>
+
+              <li class="countries-list-item">
+                <a href="europe/azerbaijan" class="countries-list-item__link">Азербайджан</a>
+              </li>
+
+              <li class="countries-list-item">
+                <a href="europe/albany" class="countries-list-item__link">Албания</a>
+              </li>
+
+              <li class="countries-list-item">
+                <a href="europe/argir" class="countries-list-item__link">Алжир</a>
+              </li>
+
+              <li class="countries-list-item">
+                <a href="europe/angola" class="countries-list-item__link">Ангола</a>
+              </li>
+
+              <li class="countries-list-item">
+                <a href="europe/andorra" class="countries-list-item__link">Андорра</a>
+              </li>
+
+              <li class="countries-list-item">
+                <a href="europe/antigua-and-barbuda" class="countries-list-item__link">Антигуа и Барбуда</a>
+              </li>
+              <li class="countries-list-item">
+                <a href="europe/argentina" class="countries-list-item__link">Аргентина</a>
+              </li>
+              <li class="countries-list-item">
+                <a href="europe/armenia" class="countries-list-item__link">Армения</a>
+              </li>
+              <li class="countries-list-item">
+                <a href="europe/afghanistan" class="countries-list-item__link">Афганистан</a>
+              </li>
+            </ul>
+
+            <button type="button" class="country-filter__close">Свернуть</button>
+          </section>
+
+          <h2 class="user-filter-form__heading">Подберите идеального попутчика</h2>
+          <h3 class="users-filter-form__heading">Хобби</h3>
+          <ul class="filter-list">
 
           </ul>
 
-          <ul class="users-filter-form__list users-filter-form__list--active music-filter">
+          <h3 class="users-filter-form__heading">Музыка</h3>
+          <ul class="filter-list filter-list--active">
             <li>
-              <input type="checkbox" class="music-filter__checkbox" id="music-rock" name="music-rock">
-              <label for="music-rock" class="music-filter__label">Тяжелый рок</label>
+              <input type="checkbox" class="filter-list__checkbox" id="music-rock" name="music-rock">
+              <label for="music-rock" class="filter-list__label">Тяжелый рок</label>
             </li>
 
             <li>
-              <input type="checkbox" class="music-filter__checkbox" id="music-rep" name="music-rep">
-              <label for="music-rep" class="music-filter__label">Тяжелый рок</label>
+              <input type="checkbox" class="filter-list__checkbox" id="music-rap" name="music-rap">
+              <label for="music-rap" class="filter-list__label">Русский рэп</label>
             </li>
 
             <li>
-              <input type="checkbox" class="music-filter__checkbox" id="music-euro" name="music-euro">
-              <label for="music-euro" class="music-filter__label">Евроденс</label>
+              <input type="checkbox" class="filter-list__checkbox" id="music-euro" name="music-euro">
+              <label for="music-euro" class="filter-list__label">Евроденс</label>
             </li>
           </ul>
 
-          <ul class="users-filter-form__list food-filter">
+          <h3 class="users-filter-form__heading">Еда</h3>
+          <ul class="filter-list">
 
           </ul>
 
-          <ul class="users-filter-form__list users-filter-form__list--active transport-filter">
+          <h3 class="users-filter-form__heading">Транспорт</h3>
+          <ul class="filter-list filter-list--active">
             <li>
-              <input type="checkbox" class="transport-filter__checkbox" checked id="transport-aero" name="transport-aero">
+              <input type="checkbox" class="filter-list__checkbox" checked id="transport-aero" name="transport-aero">
               <label for="transport-aero" class="visually-hidden">На самолете</label>
             </li>
 
             <li>
-              <input type="checkbox" class="transport-filter__checkbox" checked id="transport-autobus" name="transport-autobus">
+              <input type="checkbox" class="filter-list__checkbox" checked id="transport-autobus" name="transport-autobus">
               <label for="transport-autobus" class="visually-hidden">На автобусе</label>
             </li>
 
             <li>
-              <input type="checkbox" class="transport-filter__checkbox" id="transport-velo" name="transport-velo">
+              <input type="checkbox" class="filter-list__checkbox" id="transport-velo" name="transport-velo">
               <label for="transport-velo" class="visually-hidden">На велосипеде</label>
             </li>
 
             <li>
-              <input type="checkbox" class="transport-filter__checkbox" checked id="transport-feet" name="transport-feet">
+              <input type="checkbox" class="filter-list__checkbox" checked id="transport-feet" name="transport-feet">
               <label for="transport-feet" class="visually-hidden">Пешком</label>
             </li>
           </ul>
 
-          <ul class="filter-level">
+          <h3 class="users-filter-form__heading">Левел</h3>
+          <ul class="filter-list filter-list--active">
             <li>
-              <input type="number" class="filter-level__input" min="0" max="100" value="30" id="min-level" name="min-level">
+              <input type="number" class="filter-list__input" min="0" max="100" value="30" id="min-level" name="min-level">
               <label for="min-level" class="visually-hidden">Минимальный уровень</label>
             </li>
 
             <li>
-              <input type="number" class="filter-level__input" min="0" max="100" value="100" id="max-level" name="max-level">
+              <input type="number" class="filter-list__input" min="0" max="100" value="100" id="max-level" name="max-level">
               <label for="max-level" class="visually-hidden">Максимальный уровень</label>
             </li>
           </ul>
 
-          <div class="filter-range">
-            <button type="button" class="filter-range__min">
+          <div class="filter-list filter-list--active">
+            <button type="button" class="filter-list__min">
               <span class="visually-hidden">Меньше</span>
             </button>
 
-            <button type="button" class="filter-range__min">
+            <button type="button" class="filter-list__max">
               <span class="visually-hidden">Больше</span>
             </button>
           </div>
 
           <button type="submit" class="user-filter__show">Показать</button>
         </form>
-      </div>
-
-      <div class="country-filter">
-        <h2 class="country-filter__heading">Фильтрация по странам:</h2>
-        <ul class="continent-list">
-          <li class="continent-list__item continent-list__item--active">Европа</li>
-          <li class="continent-list__item">Азия</li>
-          <li class="continent-list__item">Америка</li>
-          <li class="continent-list__item">Острова</li>
-        </ul>
-
-        <ul class="letters-list">
-          <li class="letter-list__item">А</li>
-          <li class="letter-list__item">Б</li>
-          <li class="letter-list__item">В</li>
-          <li class="letter-list__item">Г</li>
-          <li class="letter-list__item">Д</li>
-          <li class="letter-list__item">Е</li>
-          <li class="letter-list__item">З</li>
-          <li class="letter-list__item">И</li>
-          <li class="letter-list__item">К</li>
-          <li class="letter-list__item">Л</li>
-          <li class="letter-list__item">М</li>
-          <li class="letter-list__item">Н</li>
-          <li class="letter-list__item">О</li>
-          <li class="letter-list__item">П</li>
-          <li class="letter-list__item">Р</li>
-          <li class="letter-list__item">С</li>
-          <li class="letter-list__item">Т</li>
-          <li class="letter-list__item">У</li>
-          <li class="letter-list__item">Ф</li>
-          <li class="letter-list__item">Х</li>
-          <li class="letter-list__item">Ч</li>
-          <li class="letter-list__item">Ш</li>
-          <li class="letter-list__item">З</li>
-          <li class="letter-list__item">Ю</li>
-          <li class="letter-list__item">Я</li>
-        </ul>
-
-        <ul class="countries-list">
-          <li class="countries-list-item">
-            <a href="europe/australia" class="countries-list-item__link">Австралия</a>
-          </li>
-
-          <li class="countries-list-item">
-            <a href="europe/austria" class="countries-list-item__link">Австрия</a>
-          </li>
-
-          <li class="countries-list-item">
-            <a href="europe/azerbaijan" class="countries-list-item__link">Азербайджан</a>
-          </li>
-
-          <li class="countries-list-item">
-            <a href="europe/albany" class="countries-list-item__link">Албания</a>
-          </li>
-
-          <li class="countries-list-item">
-            <a href="europe/argir" class="countries-list-item__link">Алжир</a>
-          </li>
-
-          <li class="countries-list-item">
-            <a href="europe/angola" class="countries-list-item__link">Ангола</a>
-          </li>
-
-          <li class="countries-list-item">
-            <a href="europe/andorra" class="countries-list-item__link">Андорра</a>
-          </li>
-
-          <li class="countries-list-item">
-            <a href="europe/antigua-and-barbuda" class="countries-list-item__link">Антигуа и Барбуда</a>
-          </li>
-          <li class="countries-list-item">
-            <a href="europe/argentina" class="countries-list-item__link">Аргентина</a>
-          </li>
-          <li class="countries-list-item">
-            <a href="europe/armenia" class="countries-list-item__link">Армения</a>
-          </li>
-          <li class="countries-list-item">
-            <a href="europe/afghanistan" class="countries-list-item__link">Афганистан</a>
-          </li>
-        </ul>
-
-        <button type="button" class="country-filter__close">Свернуть</button>
-      </div>
 
       <section class="users">
         <h2 class="visually-hidden">Пользователи</h2>
@@ -410,6 +497,156 @@
           <a class="users-nav__forward users-forward">
             <span class="visually-hidden">Вперед</span>
           </a>
+        </div>
+
+        <div class="popup-select">
+          <h2 class="popup-select__heading">Выберите страну:</h2>
+          <button type="button" class="popup-select__close">
+            <span class="visually-hidden">Закрыть меню выбора страны</span>
+          </button>
+          <ul class="popup-letters">
+            <li>
+              <a href="#" class="popup-letters__item popup-letters__item--selected">А</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Б</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">В</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Г</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Д</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Е</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">З</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">И</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">К</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Л</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">М</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Н</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">О</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">П</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Р</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">С</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Т</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">У</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Ф</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Х</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Ч</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Ш</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">З</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Ю</a>
+            </li>
+
+            <li>
+              <a href="#" class="popup-letters__item">Я</a>
+            </li>
+          </ul>
+
+          <ul class="popup-countries">
+            <li class="popup-countries-item">
+              <a href="europe/australia" class="popup-countries-item__link">Австралия</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/austria" class="popup-countries-item__link">Австрия</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/azerbaijan" class="popup-countries-item__link">Азербайджан</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/albany" class="popup-countries-item__link">Албания</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/argir" class="popup-countries-item__link">Алжир</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/angola" class="popup-countries-item__link">Ангола</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/andorra" class="popup-countries-item__link">Андорра</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/antigua-and-barbuda" class="popup-countries-item__link">Антигуа и Барбуда</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/argentina" class="popup-countries-item__link">Аргентина</a>
+            </li>
+
+            <li class="popup-countries-item">
+              <a href="europe/armenia" class="popup-countries-item__link">Армения</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

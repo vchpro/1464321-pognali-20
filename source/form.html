@@ -7,29 +7,27 @@
   <body>
 
     <header class="page-header">
-      <h1 class="visually-hidden">Погнали?</h1>
-      <a class="page-header__logo header-logo">
+      <a href="index.html" class="page-header__logo header-logo">
         <img src="" alt="Погнали?">
       </a>
       <button class="page-header__menu header-menu">
         <span class="visually-hidden">Меню</span>
       </button>
 
-      <article class="page-menu">
-        <h2 class="visually-hidden">Меню</h2>
+      <div class="page-menu">
 
         <nav class="page-nav">
           <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">О сервисе</a>
+            <li>
+              <a href="index.html" class="nav-list__link">О сервисе</a>
             </li>
 
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">Направления</a>
+            <li>
+              <a href="photo.html" class="nav-list__link">Направления</a>
             </li>
 
-            <li class="nav-item">
-              <a href="photo.html" class="nav-item__link">Попутчики</a>
+            <li>
+              <a class="nav-list__link nav-list__link--active">Попутчики</a>
             </li>
           </ul>
         </nav>
@@ -37,35 +35,37 @@
         <a href="" class="page-menu__auth">Авторизация</a>
 
         <ul class="page-contacts">
-          <li class="page-contact">
-            <a href="tel:88005558628" class="page-contact__link">8 800 555-86-28</a>
+          <li>
+            <a href="tel:88005558628" class="page-contacts__link">8 800 555-86-28</a>
           </li>
 
-          <li class="page-contact">
-            <a href="mailto:mail@htmlacademy.ru" class="page-contact__link">mail@htmlacademy.ru</a>
+          <li>
+            <a href="mailto:mail@htmlacademy.ru" class="page-contacts__link">mail@htmlacademy.ru</a>
           </li>
         </ul>
 
-        <ul class="page-socialy">
-          <li class="page-social">
+        <ul class="page-social">
+          <li>
             <a href="#" class="page-social__link">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
 
-          <li class="page-social">
+          <li>
             <a href="#" class="page-social__link">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
 
-          <li class="page-social">
+          <li>
             <a href="#" class="page-social__link">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
         </ul>
-      </article>
+      </div>
+
+      <h1 class="page-header__heading">Направления</h1>
     </header>
 
     <main>
@@ -78,16 +78,18 @@
             <span class="profile-level__level-text">level</span>
           </div>
           <img src="" alt="Фото вашего профиля" class="create-direction__photo">
-          <button type="button" class="create-direction__change-photo">Сменить фото</button>
+          <input type="file" class="create-direction__change-photo" id="change-photo" class="change-photo">
+          <label for="change-photo" class="create-direction__change-label">Сменить фото</label>
 
           <div class="my-tags">
-            <h3 class="my-tags__heading">Теги</h3>
-            <textarea class="my-tags__tags">
+            <label for="my-tags">Теги</label>
+            <textarea class="my-tags__tags" id="my-tags" name="my-tags">
               #бургер #бар #футбол #концерт #крафт
             </textarea>
           </div>
 
           <div class="transport">
+            <h3 class="transport__heading">Транспорт</h3>
             <input type="checkbox" name="transport-aero" class="transport__checkbox" checked id="transport-aero">
             <label for="transport-aero" class="visually-hidden">На самолете</label>
 
@@ -106,7 +108,7 @@
 
             <ol class="plans-list">
               <li class="plan">
-                <span class="plan-direction">Франция, Италия</span>
+                <span class="plan__direction">Франция, Италия</span>
                 <span class="plan__companions-count">3 Попутчика</span>
                 <span class="plan__date">26 мар — 29 мар</span>
 
@@ -114,7 +116,7 @@
               </li>
 
               <li class="plan">
-                <span class="plan-direction">Таиланд, Индонезия</span>
+                <span class="plan__direction">Таиланд, Индонезия</span>
                 <span class="plan__companions-count">1 Попутчик</span>
                 <span class="plan__date">1 июл — 15 июл</span>
 
@@ -125,7 +127,7 @@
 
           <section class="create-plan">
             <h3 class="create-plan__heading">Добавить план</h3>
-            <ul class="plan-steps">
+            <ol class="plan-steps">
               <li class="plan-step plan-step--active">
                 <button type="button" class="plan-step__button">
                   <span class="visually-hidden">Первый шаг</span>
@@ -143,9 +145,9 @@
                   <span class="visually-hidden">Третий шаг</span>
                 </button>
               </li>
-            </ul>
+            </ol>
 
-            <article class="plan-step">
+            <article class="plan-step" id="step1">
               <h4 class="plan-step__heading">Шаг 1. Даты пребывания</h4>
 
               <p class="plan-step__text">
@@ -157,13 +159,16 @@
               </p>
 
               <div class="companions-count">
-                <h5 class="companions-count__heading">Ищу попутчиков:</h5>
+                <label class="companions-count__label" for="companions-count">Ищу попутчиков:</label>
                 <p class="companions-count__text">Чел.</p>
 
-                <button type="button" class="companions-count__minus">-</button>
+                <button type="button" class="companions-count__minus">
+                  <span class="visually-hidden">Меньше</span>
+                </button>
                 <input type="number" class="companions-count__input" id="companions-count" name="companions-count" min="1" value="2">
-                <label for="companions-count">Количество попутчиков</label>
-                <button type="button" class="companions-count__plus">+</button>
+                <button type="button" class="companions-count__plus">
+                  <span class="visually-hidden">Больше</span>
+                </button>
               </div>
 
               <div class="duration">
@@ -192,81 +197,221 @@
 
                 <table class="calendar-date">
                   <tr>
-                    <th class="calendar-date__weekday">П</th>
-                    <th class="calendar-date__weekday">В</th>
-                    <th class="calendar-date__weekday">С</th>
-                    <th class="calendar-date__weekday">Ч</th>
-                    <th class="calendar-date__weekday">П</th>
-                    <th class="calendar-date__weekday calendar-date__weekday--accent">С</th>
-                    <th class="calendar-date__weekday calendar-date__weekday--accent">В</th>
+                    <th>
+                      <button type="button" class="calendar-date__weekday">П</button>
+                    </th>
+
+                    <th>
+                      <button type="button" class="calendar-date__weekday">В</button>
+                    </th>
+
+                    <th>
+                      <button type="button" class="calendar-date__weekday">С</button>
+                    </th>
+
+                    <th>
+                      <button type="button" class="calendar-date__weekday">Ч</button>
+                    </th>
+
+                    <th>
+                      <button type="button" class="calendar-date__weekday">П</button>
+                    </th>
+
+                    <th>
+                      <button type="button" class="calendar-date__weekday calendar-date__weekday--accent">С</button>
+                    </th>
+
+                    <th>
+                      <button type="button" class="calendar-date__weekday calendar-date__weekday--accent">В</button>
+                    </th>
                   </tr>
 
                   <tr>
-                    <td class="calendar-date__day">23</td>
-                    <td class="calendar-date__day">24</td>
-                    <td class="calendar-date__day">25</td>
-                    <td class="calendar-date__day">26</td>
-                    <td class="calendar-date__day">27</td>
-                    <td class="calendar-date__day">28</td>
-                    <td class="calendar-date__day">1</td>
+                    <td>
+                      <button type="button" class="calendar-date__day">23</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">24</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">25</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">26</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">27</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">28</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">1</button>
+                    </td>
                   </tr>
 
                   <tr>
-                    <td class="calendar-date__day">2</td>
-                    <td class="calendar-date__day">3</td>
-                    <td class="calendar-date__day">4</td>
-                    <td class="calendar-date__day">5</td>
-                    <td class="calendar-date__day">6</td>
-                    <td class="calendar-date__day">7</td>
-                    <td class="calendar-date__day">8</td>
+                    <td>
+                      <button type="button" class="calendar-date__day">2</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">3</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">4</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">5</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">6</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">7</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">8</button>
+                    </td>
                   </tr>
 
                   <tr>
-                    <td class="calendar-date__day">9</td>
-                    <td class="calendar-date__day">10</td>
-                    <td class="calendar-date__day">11</td>
-                    <td class="calendar-date__day">12</td>
-                    <td class="calendar-date__day">13</td>
-                    <td class="calendar-date__day">14</td>
-                    <td class="calendar-date__day">15</td>
+                    <td>
+                      <button type="button" class="calendar-date__day">9</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">10</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">11</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">12</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">13</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">14</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">15</button>
+                    </td>
                   </tr>
 
                   <tr>
-                    <td class="calendar-date__day">16</td>
-                    <td class="calendar-date__day">17</td>
-                    <td class="calendar-date__day">18</td>
-                    <td class="calendar-date__day">19</td>
-                    <td class="calendar-date__day">20</td>
-                    <td class="calendar-date__day">21</td>
-                    <td class="calendar-date__day">22</td>
+                    <td>
+                      <button type="button" class="calendar-date__day">16</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">17</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">18</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">19</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">20</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">21</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">22</button>
+                    </td>
                   </tr>
 
                   <tr>
-                    <td class="calendar-date__day">23</td>
-                    <td class="calendar-date__day">24</td>
-                    <td class="calendar-date__day">25</td>
-                    <td class="calendar-date__day calendar-date__day--acent">26</td>
-                    <td class="calendar-date__day calendar-date__day--acent">27</td>
-                    <td class="calendar-date__day calendar-date__day--acent">28</td>
-                    <td class="calendar-date__day calendar-date__day--selected">29</td>
+                    <td>
+                      <button type="button" class="calendar-date__day">23</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">24</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day">25</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--selected">26</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--selected">27</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--selected">28</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--available">29</button>
+                    </td>
                   </tr>
 
                   <tr>
-                    <td class="calendar-date__day calendar-date__day--selected">30</td>
-                    <td class="calendar-date__day calendar-date__day--selected">31</td>
-                    <td class="calendar-date__day calendar-date__day--selected">1</td>
-                    <td class="calendar-date__day calendar-date__day--selected">2</td>
-                    <td class="calendar-date__day calendar-date__day--selected">3</td>
-                    <td class="calendar-date__day calendar-date__day--selected">4</td>
-                    <td class="calendar-date__day calendar-date__day--selected">5</td>
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--available">30</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--available">31</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--available">1</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--available">2</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--available">3</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--available">4</button>
+                    </td>
+
+                    <td>
+                      <button type="button" class="calendar-date__day calendar-date__day--available">5</button>
+                    </td>
                   </tr>
                 </table>
               </div>
 
-              <button type="button" class="plan-step__next-step">Следующий шаг</button>
+              <a href="#step2" class="plan-step__next-step">Следующий шаг</a>
             </article>
 
-            <article class="plan-step">
+            <article class="plan-step" id="step2">
               <h4 class="plan-step__heading">Шаг 2. Маршрут</h4>
               <p class="plan-step__text">
                 Укажите страны, которые вы
@@ -276,16 +421,20 @@
 
               <ul class="add-visit-list">
                 <li class="visit-item visit-item--selected">
-                  <span class="visit-item__country">Босния и герцеговина</span>
-                  <img src="" alt="Босния и герцеговина" class="visit-item__img">
+                  <a href="#" class="select-country">
+                    <span class="visit-item__country">Босния и герцеговина</span>
+                    <img src="" alt="Босния и герцеговина" class="visit-item__img">
+                  </a>
                   <button type="button" class="visit-item__remove">
                     <span class="visually-hidden">Удалить страну</span>
                   </button>
                 </li>
 
                 <li class="visit-item visit-item--selected">
-                  <span class="visit-item__country">Чехия</span>
-                  <img src="" alt="Чехия" class="visit-item__img">
+                  <a href="#" class="select-country">
+                    <span class="visit-item__country">Чехия</span>
+                    <img src="" alt="Чехия" class="visit-item__img">
+                  </a>
                   <button type="button" class="visit-item__remove">
                     <span class="visually-hidden">Удалить страну</span>
                   </button>
@@ -315,17 +464,17 @@
               </span>
 
               <div class="entertainment">
-                <h5 class="entertainment__heading">Босния и Герцеговина</h5>
+                <label for="entertainment" class="entertainment__label">Босния и Герцеговина</label>
                 <img src="" alt="Босния и Герцеговина" class="entertainment__img">
 
-                <textarea class="entertainment__textarea" placeholder="План действий" name="entertainment"></textarea>
+                <textarea class="entertainment__textarea" placeholder="План действий" name="entertainment" id="entertainment"></textarea>
               </div>
 
               <div class="entertainment">
-                <h5 class="entertainment__heading">Чехия</h5>
+                <label for="entertainment-2" class="entertainment__heading">Чехия</label>
                 <img src="" alt="Чехия" class="entertainment__img">
 
-                <textarea class="entertainment__textarea" placeholder="План действий" name="entertainment">
+                <textarea class="entertainment__textarea" placeholder="План действий" name="entertainment" id="entertainment2">
                   Пить пиво и лазить
                   по старым замкам,
                   наслаждаться архитектурой
@@ -334,10 +483,10 @@
               </div>
 
               <button type="submit" class="plan-step__submit">Отправить</button>
-              <button type="button" class="plan-step__back-step">На шаг назад</button>
+              <a href="#step2" class="plan-step__back-step">На шаг назад</a>
             </article>
           </section>
-        </form>
+          </form>
       </section>
     </main>
 
