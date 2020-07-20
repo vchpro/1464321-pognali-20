@@ -69,7 +69,6 @@
     </header>
 
     <main>
-        <form class="users-filter-form">
 
           <section class="country-filter">
             <h2 class="country-filter__heading">Фильтрация по странам:</h2>
@@ -191,128 +190,131 @@
             </ul>
 
             <ul class="countries-list">
-              <li class="countries-list-item">
-                <a href="europe/australia" class="countries-list-item__link">Австралия</a>
+              <li class="countries-list__item">
+                <a href="europe/australia" class="countries-list__link">Австралия</a>
               </li>
 
-              <li class="countries-list-item">
-                <a href="europe/austria" class="countries-list-item__link">Австрия</a>
+              <li class="countries-list__item">
+                <a href="europe/austria" class="countries-list__link">Австрия</a>
               </li>
 
-              <li class="countries-list-item">
-                <a href="europe/azerbaijan" class="countries-list-item__link">Азербайджан</a>
+              <li class="countries-list__item">
+                <a href="asian/azerbaijan" class="countries-list__link">Азербайджан</a>
               </li>
 
-              <li class="countries-list-item">
-                <a href="europe/albany" class="countries-list-item__link">Албания</a>
+              <li class="countries-list__item">
+                <a href="islands/albany" class="countries-list__link">Албания</a>
               </li>
 
-              <li class="countries-list-item">
-                <a href="europe/argir" class="countries-list-item__link">Алжир</a>
+              <li class="countries-list__item">
+                <a href="africa/argir" class="countries-list__link">Алжир</a>
               </li>
 
-              <li class="countries-list-item">
-                <a href="europe/angola" class="countries-list-item__link">Ангола</a>
+              <li class="countries-list__item">
+                <a href="africa/angola" class="countries-list__link">Ангола</a>
               </li>
 
-              <li class="countries-list-item">
-                <a href="europe/andorra" class="countries-list-item__link">Андорра</a>
+              <li class="countries-list__item">
+                <a href="europe/andorra" class="countries-list__link">Андорра</a>
               </li>
 
-              <li class="countries-list-item">
-                <a href="europe/antigua-and-barbuda" class="countries-list-item__link">Антигуа и Барбуда</a>
+              <li class="countries-list__item">
+                <a href="islands/antigua-and-barbuda" class="countries-list__link">Антигуа и Барбуда</a>
               </li>
-              <li class="countries-list-item">
-                <a href="europe/argentina" class="countries-list-item__link">Аргентина</a>
+
+              <li class="countries-list__item">
+                <a href="america/argentina" class="countries-list__link">Аргентина</a>
               </li>
-              <li class="countries-list-item">
-                <a href="europe/armenia" class="countries-list-item__link">Армения</a>
+
+              <li class="countries-list__item">
+                <a href="asian/armenia" class="countries-list__link">Армения</a>
               </li>
-              <li class="countries-list-item">
-                <a href="europe/afghanistan" class="countries-list-item__link">Афганистан</a>
+
+              <li class="countries-list__item">
+                <a href="asian/afghanistan" class="countries-list__link">Афганистан</a>
               </li>
             </ul>
 
             <button type="button" class="country-filter__close">Свернуть</button>
           </section>
+          <form class="users-filter-form" action="https://echo.htmlacademy.ru" method="POST">
+            <h2 class="users-filter-form__heading">Подберите идеального попутчика</h2>
+            <h3 class="users-filter-form__heading">Хобби</h3>
+            <ul class="filter-list filter-list--active">
 
-          <h2 class="user-filter-form__heading">Подберите идеального попутчика</h2>
-          <h3 class="users-filter-form__heading">Хобби</h3>
-          <ul class="filter-list">
+            </ul>
 
-          </ul>
+            <h3 class="users-filter-form__heading">Музыка</h3>
+            <ul class="filter-list filter-list--active">
+              <li>
+                <input type="checkbox" class="filter-list__checkbox" id="music-rock" name="music-rock">
+                <label for="music-rock" class="filter-list__label">Тяжелый рок</label>
+              </li>
 
-          <h3 class="users-filter-form__heading">Музыка</h3>
-          <ul class="filter-list filter-list--active">
-            <li>
-              <input type="checkbox" class="filter-list__checkbox" id="music-rock" name="music-rock">
-              <label for="music-rock" class="filter-list__label">Тяжелый рок</label>
-            </li>
+              <li>
+                <input type="checkbox" class="filter-list__checkbox" id="music-rap" name="music-rap">
+                <label for="music-rap" class="filter-list__label">Русский рэп</label>
+              </li>
 
-            <li>
-              <input type="checkbox" class="filter-list__checkbox" id="music-rap" name="music-rap">
-              <label for="music-rap" class="filter-list__label">Русский рэп</label>
-            </li>
+              <li>
+                <input type="checkbox" class="filter-list__checkbox" id="music-euro" name="music-euro">
+                <label for="music-euro" class="filter-list__label">Евроденс</label>
+              </li>
+            </ul>
 
-            <li>
-              <input type="checkbox" class="filter-list__checkbox" id="music-euro" name="music-euro">
-              <label for="music-euro" class="filter-list__label">Евроденс</label>
-            </li>
-          </ul>
+            <h3 class="users-filter-form__heading">Еда</h3>
+            <ul class="filter-list filter-list--active">
 
-          <h3 class="users-filter-form__heading">Еда</h3>
-          <ul class="filter-list">
+            </ul>
 
-          </ul>
+            <h3 class="users-filter-form__heading">Транспорт</h3>
+            <ul class="filter-list filter-list--active">
+              <li>
+                <input type="checkbox" class="filter-list__checkbox" checked id="transport-aero" name="transport-aero">
+                <label for="transport-aero" class="visually-hidden">На самолете</label>
+              </li>
 
-          <h3 class="users-filter-form__heading">Транспорт</h3>
-          <ul class="filter-list filter-list--active">
-            <li>
-              <input type="checkbox" class="filter-list__checkbox" checked id="transport-aero" name="transport-aero">
-              <label for="transport-aero" class="visually-hidden">На самолете</label>
-            </li>
+              <li>
+                <input type="checkbox" class="filter-list__checkbox" checked id="transport-autobus" name="transport-autobus">
+                <label for="transport-autobus" class="visually-hidden">На автобусе</label>
+              </li>
 
-            <li>
-              <input type="checkbox" class="filter-list__checkbox" checked id="transport-autobus" name="transport-autobus">
-              <label for="transport-autobus" class="visually-hidden">На автобусе</label>
-            </li>
+              <li>
+                <input type="checkbox" class="filter-list__checkbox" id="transport-velo" name="transport-velo">
+                <label for="transport-velo" class="visually-hidden">На велосипеде</label>
+              </li>
 
-            <li>
-              <input type="checkbox" class="filter-list__checkbox" id="transport-velo" name="transport-velo">
-              <label for="transport-velo" class="visually-hidden">На велосипеде</label>
-            </li>
+              <li>
+                <input type="checkbox" class="filter-list__checkbox" checked id="transport-feet" name="transport-feet">
+                <label for="transport-feet" class="visually-hidden">Пешком</label>
+              </li>
+            </ul>
 
-            <li>
-              <input type="checkbox" class="filter-list__checkbox" checked id="transport-feet" name="transport-feet">
-              <label for="transport-feet" class="visually-hidden">Пешком</label>
-            </li>
-          </ul>
+            <h3 class="users-filter-form__heading">Левел</h3>
+            <ul class="filter-list filter-list--active">
+              <li>
+                <input type="number" class="filter-list__input" min="0" max="100" value="30" id="min-level" name="min-level">
+                <label for="min-level" class="visually-hidden">Минимальный уровень</label>
+              </li>
 
-          <h3 class="users-filter-form__heading">Левел</h3>
-          <ul class="filter-list filter-list--active">
-            <li>
-              <input type="number" class="filter-list__input" min="0" max="100" value="30" id="min-level" name="min-level">
-              <label for="min-level" class="visually-hidden">Минимальный уровень</label>
-            </li>
+              <li>
+                <input type="number" class="filter-list__input" min="0" max="100" value="100" id="max-level" name="max-level">
+                <label for="max-level" class="visually-hidden">Максимальный уровень</label>
+              </li>
+            </ul>
 
-            <li>
-              <input type="number" class="filter-list__input" min="0" max="100" value="100" id="max-level" name="max-level">
-              <label for="max-level" class="visually-hidden">Максимальный уровень</label>
-            </li>
-          </ul>
+            <div class="filter-list filter-list--active">
+              <button type="button" class="filter-list__min">
+                <span class="visually-hidden">Меньше</span>
+              </button>
 
-          <div class="filter-list filter-list--active">
-            <button type="button" class="filter-list__min">
-              <span class="visually-hidden">Меньше</span>
-            </button>
+              <button type="button" class="filter-list__max">
+                <span class="visually-hidden">Больше</span>
+              </button>
+            </div>
 
-            <button type="button" class="filter-list__max">
-              <span class="visually-hidden">Больше</span>
-            </button>
-          </div>
-
-          <button type="submit" class="user-filter__show">Показать</button>
-        </form>
+            <button type="submit" class="user-filter__show">Показать</button>
+          </form>
 
       <section class="users">
         <h2 class="visually-hidden">Пользователи</h2>
@@ -607,44 +609,48 @@
           </ul>
 
           <ul class="popup-countries">
-            <li class="popup-countries-item">
-              <a href="europe/australia" class="popup-countries-item__link">Австралия</a>
+            <li class="popup-countries__item">
+              <a href="europe/australia" class="popup-countries__link">Австралия</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/austria" class="popup-countries-item__link">Австрия</a>
+            <li class="popup-countries__item">
+              <a href="europe/austria" class="popup-countries__link">Австрия</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/azerbaijan" class="popup-countries-item__link">Азербайджан</a>
+            <li class="popup-countries__item">
+              <a href="asian/azerbaijan" class="popup-countries__link">Азербайджан</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/albany" class="popup-countries-item__link">Албания</a>
+            <li class="popup-countries__item">
+              <a href="islands/albany" class="popup-countries__link">Албания</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/argir" class="popup-countries-item__link">Алжир</a>
+            <li class="popup-countries__item">
+              <a href="africa/argir" class="popup-countries__link">Алжир</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/angola" class="popup-countries-item__link">Ангола</a>
+            <li class="popup-countries__item">
+              <a href="africa/angola" class="popup-countries__link">Ангола</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/andorra" class="popup-countries-item__link">Андорра</a>
+            <li class="popup-countries__item">
+              <a href="europe/andorra" class="popup-countries__link">Андорра</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/antigua-and-barbuda" class="popup-countries-item__link">Антигуа и Барбуда</a>
+            <li class="popup-countries__item">
+              <a href="islands/antigua-and-barbuda" class="popup-countries__link">Антигуа и Барбуда</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/argentina" class="popup-countries-item__link">Аргентина</a>
+            <li class="popup-countries__item">
+              <a href="america/argentina" class="popup-countries__link">Аргентина</a>
             </li>
 
-            <li class="popup-countries-item">
-              <a href="europe/armenia" class="popup-countries-item__link">Армения</a>
+            <li class="popup-countries__item">
+              <a href="asian/armenia" class="popup-countries__link">Армения</a>
+            </li>
+
+            <li class="popup-countries__item">
+              <a href="asian/afghanistan" class="popup-countries__link">Афганистан</a>
             </li>
           </ul>
         </div>
