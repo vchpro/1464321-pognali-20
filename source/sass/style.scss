@@ -1,1 +1,30 @@
-// Начните писать стили здесь
+@import "fonts.scss";
+@import "variables.scss";
+
+@import "blocks/visually-hidden.scss";
+@import "blocks/page-header.scss";
+@import "blocks/nav-list.scss";
+@import "blocks/about.scss";
+@import "blocks/direction-country.scss";
+@import "blocks/directions.scss";
+@import "blocks/page-contacts.scss";
+@import "blocks/promo-guide.scss";
+@import "blocks/promo.scss";
+@import "blocks/quote.scss";
+@import "blocks/companions.scss";
+@import "blocks/companion-level.scss";
+@import "blocks/promo-companion.scss";
+@import "blocks/companions-list.scss";
+@import "blocks/add-profile.scss";
+@import "blocks/tariff-list.scss";
+@import "blocks/tariff.scss";
+@import "blocks/copyright.scss";
+@import "blocks/users.scss";
+@import "blocks/user.scss";
+@import "blocks/want-visit.scss";
+@import "blocks/want-visit-countries.scss";
+@import "blocks/user-level.scss";
+
+body {
+  font: $font;
+}

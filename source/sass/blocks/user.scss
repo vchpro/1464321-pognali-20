@@ -1,0 +1,30 @@
+.user__name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-blue-light;
+}
+
+.user__like {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic-blue;
+}
+
+.user__tags {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: $special-grey;
+}
+
+.user__invite {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue;
+}
