@@ -1,5 +1,6 @@
 @import "fonts.scss";
 @import "variables.scss";
+@import "global.scss";
 
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
@@ -24,7 +25,5 @@
 @import "blocks/want-visit.scss";
 @import "blocks/want-visit-countries.scss";
 @import "blocks/user-level.scss";
-
-body {
-  font: $font;
-}
+@import "blocks/main-footer.scss";
+@import "blocks/page-photo.scss";
