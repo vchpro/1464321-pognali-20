@@ -1,6 +1,6 @@
 .companions {
   background-color: $basic-blue;
-  margin-top: 68px;
+  padding-top: 68px;
 }
 
 .companions__heading {
@@ -15,10 +15,12 @@
   font-size: 16px;
   line-height: 22px;
   color: $white;
+  margin-top: 19px;
 }
 
 .companions__about--accent {
   font-weight: bold;
+  margin-top: 25px;
 }
 
 .companions__show-all {
@@ -27,4 +29,5 @@
   font-size: 18px;
   line-height: 18px;
   color: $basic-blue-light;
+  margin-top: 20px;
 }
