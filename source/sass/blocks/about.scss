@@ -1,0 +1,24 @@
+.about {
+  background-color: $basic-blue;
+  padding-top: 72px;
+}
+
+.about__heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-orange;
+}
+
+.about__content {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  margin-top: 19px;
+}
+
+.about__content--accent {
+  font-weight: bold;
+  margin-top: 20px;
+}

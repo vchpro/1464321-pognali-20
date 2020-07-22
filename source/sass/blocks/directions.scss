@@ -1,0 +1,20 @@
+.directions {
+  list-style: none;
+  background-color: $extra-white;
+  padding-top: 71px;
+}
+
+.directions__heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-orange;
+}
+
+.directions__about {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+  margin-top: 19px;
+}

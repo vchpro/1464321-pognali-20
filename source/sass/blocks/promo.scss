@@ -1,0 +1,13 @@
+.promo {
+  background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-color: $basic-blue;
+  background-repeat: no-repeat;
+}
+
+.promo__phrase {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $white;
+}

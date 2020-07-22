@@ -1,0 +1,33 @@
+.companions {
+  background-color: $basic-blue;
+  padding-top: 68px;
+}
+
+.companions__heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-orange;
+}
+
+.companions__about {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  margin-top: 19px;
+}
+
+.companions__about--accent {
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.companions__show-all {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-blue-light;
+  margin-top: 20px;
+}
