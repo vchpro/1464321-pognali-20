@@ -1,0 +1,21 @@
+.entertainment__label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-blue-light;
+}
+
+.entertainment__textarea::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+  opacity: 0.3;
+}
+
+.entertainment__textarea {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+}
