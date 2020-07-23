@@ -1,0 +1,12 @@
+.popup-letters__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.popup-letters__item--selected {
+  background-color: $extra-white;
+}

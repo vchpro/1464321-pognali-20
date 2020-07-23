@@ -1,0 +1,16 @@
+.my-tags__label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.my-tags__tags {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-grey;
+  opacity: 0.6;
+}

@@ -1,0 +1,26 @@
+.companions-count {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.companions-count__label {
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.companions-count__text {
+  text-align: right;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  opacity: 0.3;
+}
+
+.companions-count__input {
+  font-size: 15px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}

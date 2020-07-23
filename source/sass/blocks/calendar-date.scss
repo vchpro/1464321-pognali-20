@@ -1,0 +1,29 @@
+.calendar-date__weekday {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-grey;
+}
+
+.calendar-date__weekday:nth-of-type(6),
+.calendar-date__weekday:nth-of-type(7) {
+  color: $basic-red;
+}
+
+.calendar-date__day {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-grey;
+  opacity: 0.3;
+}
+
+.calendar-date__day--available {
+  color: $basic-blue-light;
+  background-color: $extra-white;
+}
+
+.calendar-date__day--selected {
+  color: $white;
+  background-color: $basic-blue-light;
+}
