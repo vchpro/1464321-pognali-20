@@ -5,8 +5,7 @@
   color: $special-grey;
 }
 
-.calendar-date__weekday:nth-of-type(6),
- .calendar-date__weekday:nth-of-type(7) {
+.calendar-date__weekday:nth-of-type(6),.calendar-date__weekday:nth-of-type(7) {
   color: $basic-red;
 }
 
