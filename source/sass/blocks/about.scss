@@ -19,9 +19,36 @@
   line-height: 22px;
   color: $white;
   margin-top: 19px;
+  width: 211px;
 }
 
 .about__content--accent {
   font-weight: bold;
   margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .about__content {
+    font-size: 28px;
+    line-height: 33px;
+    width: 308px;
+  }
+
+  .about__content--accent {
+    font-size: 21px;
+    line-height: 25px;
+    width: 265px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about__content {
+    line-height: 34px;
+    width: 619px;
+  }
+
+  .about__content--accent {
+    line-height: 24px;
+    width: 425px;
+  }
 }

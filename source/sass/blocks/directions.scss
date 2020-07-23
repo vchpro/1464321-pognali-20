@@ -20,3 +20,21 @@
   color: $special-grey;
   margin-top: 19px;
 }
+
+@media (min-width: 1400px) {
+  .directions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .directions__heading {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .directions__about  {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}

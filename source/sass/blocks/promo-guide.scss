@@ -7,4 +7,27 @@
   font-size: 18px;
   line-height: 18px;
   color: $basic-blue;
+
+  // Template
+  display: block;
+  min-width: 260px;
+  min-height: 100px;
+  background-color: tomato;
+  margin-left: 30px;
+  margin-top: 30px;
+  // End Template
+}
+
+@media (min-width: 768px) {
+  .promo-guide {
+    width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1400px) {
+  .promo-guide {
+    width: 1320px;
+  }
 }

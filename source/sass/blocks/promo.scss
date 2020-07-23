@@ -5,9 +5,25 @@
 }
 
 .promo__phrase {
+  width: 238px;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: $white;
+  text-align: center;
+}
+
+
+@media (min-width: 1400px) {
+  .promo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 127px;
+  }
+
+  .promo__phrase {
+    margin-right: 538px;
+  }
 }

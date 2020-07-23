@@ -1,0 +1,45 @@
+.promo-buttons {
+  width: 270px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+
+// Template
+
+.promo-buttons__phone,
+.promo-buttons__mail,
+.promo-buttons__auth {
+  display: block;
+  background-color: tomato;
+  margin-left: 10px;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+// End Template
+
+@media (min-width: 768px) {
+  .promo-buttons {
+    position: absolute;
+    top: 0;
+    right: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo-buttons {
+    right: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .promo-buttons__phone {
+    display: none;
+  }
+
+  .promo-buttons__mail {
+    display: none;
+  }
+}

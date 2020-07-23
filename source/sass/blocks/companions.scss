@@ -33,3 +33,26 @@
   color: $basic-blue-light;
   margin-top: 20px;
 }
+
+@media (min-width: 1400px) {
+  .companions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .companions__heading {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .companions__about {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .companions__about--accent {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+}
