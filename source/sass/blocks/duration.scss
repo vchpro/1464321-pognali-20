@@ -1,27 +1,19 @@
-.duration__heading {
+.duration {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+}
+
+.duration__heading {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: $basic-blue-light;
 }
 
 .duration__text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
   text-align: right;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $basic-blue-light;
   opacity: 0.3;
-}
-
-.companions-count__input {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 14px;
-  text-transform: uppercase;
-  color: $basic-blue-light;
 }

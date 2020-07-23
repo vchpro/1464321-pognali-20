@@ -18,17 +18,11 @@
 }
 
 .calendar-date__day--available {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
   color: $basic-blue-light;
   background-color: $extra-white;
 }
 
 .calendar-date__day--selected {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
   color: $white;
   background-color: $basic-blue-light;
 }

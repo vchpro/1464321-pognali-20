@@ -1,14 +1,15 @@
-.country-filter__heading {
+.country-filter {
   font-weight: bold;
   font-size: 16px;
+}
+
+.country-filter__heading {
   line-height: 18px;
   text-transform: uppercase;
   color: $low-black;
 }
 
 .country-filter__close {
-  font-weight: bold;
-  font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;

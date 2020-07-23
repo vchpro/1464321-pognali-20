@@ -1,12 +1,14 @@
-.user__name {
+.user {
   font-weight: bold;
+}
+
+.user__name {
   font-size: 20px;
   line-height: 20px;
   color: $basic-blue-light;
 }
 
 .user__like {
-  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -23,7 +25,6 @@
 }
 
 .user__invite {
-  font-weight: bold;
   font-size: 17px;
   line-height: 17px;
   text-align: center;

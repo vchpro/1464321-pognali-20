@@ -1,3 +1,8 @@
+.interested {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
 .insterested__heading {
   font-weight: bold;
   font-size: 24px;
@@ -13,7 +18,7 @@
   color: $white;
 }
 
-.interested__text--accent {
+.interested__link {
   color: $basic-yellow;
   text-decoration: underline;
 }
