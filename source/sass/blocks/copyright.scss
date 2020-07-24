@@ -1,6 +1,17 @@
+.copyright {
+  display: flex;
+}
+
 .copyright__text {
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   color: $special-grey;
+}
+
+.copyright__img {
+  display: block;
+  margin-left: auto;
+  width: 67px;
+  margin-left: 23px;
 }

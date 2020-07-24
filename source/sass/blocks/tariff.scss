@@ -6,9 +6,26 @@
 
 .tariff__service {
   color: $special-grey;
+  max-width: 400px;
 }
 
 .tariff__price {
   color: $special-grey;
   margin-top: 6px;
+  max-width: 200px;
+}
+
+// Если поставить ширину меньше, то цена делает прокрутку
+@media (min-width: 900px) {
+  .tariff {
+    width: 814px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .tariff__price {
+    display: block;
+  }
 }
