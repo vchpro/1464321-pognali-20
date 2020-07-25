@@ -33,5 +33,7 @@
   .promo-guide {
     width: 1320px;
     margin: 0 auto;
+    grid-row: 2/3;
+    grid-column: 1/4;
   }
 }

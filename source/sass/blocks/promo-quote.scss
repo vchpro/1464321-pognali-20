@@ -9,3 +9,10 @@
     padding-right: 72px;
   }
 }
+
+@media (min-width: 1400px) {
+  .promo-quote {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+}
