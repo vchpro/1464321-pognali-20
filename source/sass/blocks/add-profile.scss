@@ -3,6 +3,7 @@
   padding-top: 53px;
   padding-left: 29px;
   padding-right: 25px;
+  margin: 0 auto;
 }
 
 .add-profile__heading {
@@ -18,4 +19,16 @@
   line-height: 16px;
   color: $extra-blue;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .add-profile {
+    width: 688px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .add-profile {
+    width: 750px;
+  }
 }

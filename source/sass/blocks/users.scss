@@ -1,5 +1,6 @@
 .users {
   list-style: none;
+  margin: 0 auto;
 }
 
 .users__show-more {
@@ -8,4 +9,16 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $basic-blue-light;
+}
+
+@media (min-width: 768px) {
+  .users {
+    width: 688px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .users {
+    width: 949px;
+  }
 }

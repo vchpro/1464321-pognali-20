@@ -11,6 +11,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $special-orange;
+  width: 269px;
 }
 
 .directions__about {
@@ -19,13 +20,15 @@
   line-height: 22px;
   color: $special-grey;
   margin-top: 19px;
+  width: 378px;
 }
 
 @media (min-width: 1400px) {
   .directions {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
   }
 
   .directions__heading {

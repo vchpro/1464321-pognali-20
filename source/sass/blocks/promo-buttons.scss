@@ -20,28 +20,8 @@
 
 // End Template
 
-// Не понял, как удобнее и как это удобнее реализовать
-
 @media (min-width: 768px) {
   .promo-buttons {
-    position: absolute;
-    top: 0;
-    right: 40px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .promo-buttons {
-    right: 60px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1439px) {
-  .promo-buttons__phone {
-    display: none;
-  }
-
-  .promo-buttons__mail {
     display: none;
   }
 }
