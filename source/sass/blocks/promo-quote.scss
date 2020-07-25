@@ -1,10 +1,11 @@
 .promo-quote {
   width: 250px;
   padding-left: 50px;
+  margin-top: 28px;
 }
 
 @media (min-width: 768px) {
   .promo-quote {
-    padding-left: 72px;
+    padding-right: 72px;
   }
 }

@@ -19,16 +19,34 @@
   line-height: 16px;
   color: $extra-blue;
   text-decoration: none;
+  display: block;
+  margin-top: 58px;
 }
 
 @media (min-width: 768px) {
   .add-profile {
-    width: 688px;
+    width: 738px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .add-profile__heading {
+    text-align: center;
+  }
+
+  .add-profile__tariff-list {
+    margin: 0 auto;
+  }
+
+  .add-profile__show-business {
+    width: 222px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: 1400px) {
   .add-profile {
-    width: 750px;
+    width: 1177px;
   }
 }

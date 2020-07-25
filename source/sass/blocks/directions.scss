@@ -7,6 +7,7 @@
 }
 
 .directions__heading {
+  margin: 0;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
@@ -20,15 +21,22 @@
   line-height: 22px;
   color: $special-grey;
   margin-top: 19px;
-  width: 378px;
+  width: 216px;
+}
+
+@media (min-width: 768px) {
+  .directions {
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1400px) {
   .directions {
-    display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
+    grid-template-rows: 1fr 6fr 6fr
   }
 
   .directions__heading {

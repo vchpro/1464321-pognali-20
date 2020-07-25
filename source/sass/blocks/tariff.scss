@@ -18,10 +18,11 @@
 
 
 @media (min-width: 768px) {
-  .tariff__price {
+  .tariff {
     width: 688px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 }
 

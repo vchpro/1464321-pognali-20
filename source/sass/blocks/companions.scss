@@ -11,7 +11,7 @@
   line-height: 24px;
   color: $special-orange;
   width: 220px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .companions__about {
@@ -20,13 +20,13 @@
   line-height: 22px;
   color: $white;
   margin-top: 19px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 217px;
 }
 
 .companions__about--accent {
   font-weight: bold;
   margin-top: 25px;
+  padding-right: 30px;
 }
 
 .companions__show-all {
@@ -38,21 +38,32 @@
   margin-top: 20px;
 }
 
-@media (min-width: 1400px) {
+
+@media (min-width: 768px) {
   .companions {
     display: grid;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .companions {
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 6fr;
   }
 
   .companions__heading {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin-left: auto;
   }
 
   .companions__about {
     grid-row: 2/3;
     grid-column: 1/2;
+    margin-left: auto;
   }
 
   .companions__about--accent {
