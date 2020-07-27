@@ -6,9 +6,28 @@
 
 .tariff__service {
   color: $special-grey;
+  max-width: 400px;
+  display: block;
 }
 
 .tariff__price {
   color: $special-grey;
   margin-top: 6px;
+  max-width: 200px;
+}
+
+
+@media (min-width: 768px) {
+  .tariff {
+    width: 688px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tariff {
+    width: 814px;
+  }
 }

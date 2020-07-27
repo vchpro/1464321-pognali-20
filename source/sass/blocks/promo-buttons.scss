@@ -1,0 +1,29 @@
+.promo-buttons {
+  width: 270px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 245px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Template
+
+.promo-buttons__phone,
+.promo-buttons__mail,
+.promo-buttons__auth {
+  display: block;
+  background-color: tomato;
+  margin-left: 10px;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+// End Template
+
+@media (min-width: 768px) {
+  .promo-buttons {
+    display: none;
+  }
+}

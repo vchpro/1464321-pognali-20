@@ -1,0 +1,12 @@
+.directions-list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 1400px) {
+  .directions-list {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin: 0 auto;
+  }
+}

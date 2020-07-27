@@ -11,3 +11,11 @@
   text-decoration: none;
   color: $low-black;
 }
+
+@media (min-width: 1400px) {
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2/3;
+  }
+}

@@ -18,10 +18,20 @@
   font-size: 16px;
   line-height: 22px;
   color: $white;
-  margin-top: 19px;
+  padding-top: 19px;
+  width: 211px;
 }
 
 .about__content--accent {
   font-weight: bold;
   margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-left: 0;
+    padding-right: 500px;
+    display: grid;
+    justify-content: center;
+  }
 }

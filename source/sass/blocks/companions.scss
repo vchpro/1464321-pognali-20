@@ -10,6 +10,8 @@
   font-size: 24px;
   line-height: 24px;
   color: $special-orange;
+  width: 220px;
+  margin: 0;
 }
 
 .companions__about {
@@ -18,11 +20,13 @@
   line-height: 22px;
   color: $white;
   margin-top: 19px;
+  width: 217px;
 }
 
 .companions__about--accent {
   font-weight: bold;
   margin-top: 25px;
+  padding-right: 30px;
 }
 
 .companions__show-all {
@@ -32,4 +36,38 @@
   line-height: 18px;
   color: $basic-blue-light;
   margin-top: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .companions {
+    display: grid;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .companions {
+    grid-template-columns: 428px 630px;
+    grid-template-rows: 60px 160px;
+  }
+
+  .companions__heading {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-left: auto;
+  }
+
+  .companions__about {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: auto;
+  }
+
+  .companions__about--accent {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
 }

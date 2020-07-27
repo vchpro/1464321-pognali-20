@@ -1,3 +1,8 @@
+.direction-country {
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .direction-country__heading {
   font-weight: bold;
   font-size: 21px;
@@ -6,17 +11,32 @@
 }
 
 .direction-country__promo-text {
-  font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   color: $special-grey;
   opacity: 0.3;
 }
 
 .direction-country__people-count {
-  font-weight: 500;
-  font-size: 16px;
   line-height: 20px;
   color: $basic-blue;
   opacity: 0.3;
+}
+
+
+@media (max-width: 767px) {
+  .direction-country {
+    width: 222px;
+    display: grid;
+    grid-template-columns: 178px 61px;
+  }
+
+  .direction-country__heading {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .direction-country__people-count {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }

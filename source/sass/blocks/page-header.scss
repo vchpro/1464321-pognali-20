@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+  .page-header {
+    display: grid;
+    grid-template-columns: 200px 100px 150px 200px;
+    justify-content: center;
+  }
+
+  .page-header__logo {
+    margin: 0 auto;
+  }
+
+  .page-header__auth {
+    grid-row: 1/2;
+    grid-column: 4/5;
+  }
+
+  .page-header__burger-menu {
+    grid-row: 1/2;
+    grid-column: 4/5;
+  }
+}
+
+@media (min-width: 1400px) {
+  .page-header {
+    grid-template-columns: 200px 790px 150px 200px;
+  }
+
+  .page-header__burger-menu {
+    display: none;
+  }
+}

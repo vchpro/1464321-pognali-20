@@ -1,0 +1,18 @@
+.promo-quote {
+  width: 250px;
+  padding-left: 50px;
+  margin-top: 28px;
+}
+
+@media (min-width: 768px) {
+  .promo-quote {
+    padding-right: 72px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .promo-quote {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+}
