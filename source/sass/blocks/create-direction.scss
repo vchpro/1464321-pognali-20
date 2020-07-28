@@ -1,0 +1,16 @@
+.create-direction {
+  width: 270px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .create-direction {
+    width: 618px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .create-direction {
+    width: 1320px;
+  }
+}

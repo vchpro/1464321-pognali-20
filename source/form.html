@@ -116,18 +116,17 @@
 
             <ol class="plans-list">
               <li class="plan">
-                <!-- br нужны для быстрого перестроения сеток -->
-                <span class="plan__direction">Франция, Италия</span><br class="plan__direction-br">
-                <span class="plan__companions-count">3 Попутчика</span><br>
-                <span class="plan__date">26 мар — 29 мар</span><br>
+                <span class="plan__direction">Франция, Италия</span>
+                <span class="plan__companions-count">3 Попутчика</span>
+                <span class="plan__date">26 мар — 29 мар</span>
 
                 <a href="#" class="plan__edit">Изменить</a>
               </li>
 
               <li class="plan">
-                <span class="plan__direction">Таиланд, Индонезия</span><br>
-                <span class="plan__companions-count">1 Попутчик</span><br>
-                <span class="plan__date">1 июл — 15 июл</span><br>
+                <span class="plan__direction">Таиланд, Индонезия</span>
+                <span class="plan__companions-count">1 Попутчик</span>
+                <span class="plan__date">1 июл — 15 июл</span>
 
                 <a href="#" class="plan__edit">Изменить</a>
               </li>
@@ -185,10 +184,14 @@
                 <p class="duration__text">ДН.</p>
 
                 <div class="duration__bar">
-                  <button type="button" class="duration__minus">-</button>
+                  <button type="button" class="duration__minus">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
                   <input type="number" class="duration__input" id="duration" name="duration" value="2">
-                  <label for="duration">Количество попутчиков</label>
-                  <button type="button" class="duration__plus">+</button>
+                  <label for="duration">Длительность поездки</label>
+                  <button type="button" class="duration__plus">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
 
                   <input type="checkbox" class="plan-step__children-input" name="children" id="children">
                   <label class="plan-step__children-label" for="children">Можно с детьми</label>
