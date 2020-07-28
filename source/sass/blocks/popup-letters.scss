@@ -5,8 +5,16 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-blue-light;
+  padding-right: 25px;
 }
 
 .popup-letters__item--selected {
   background-color: $extra-white;
+}
+
+.popup-letters {
+  list-style: none;
+  display: flex;
+  width: 185px;
+  flex-wrap: wrap;
 }

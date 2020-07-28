@@ -17,3 +17,9 @@
   color: $basic-blue-light;
   opacity: 0.3;
 }
+
+@media (min-width: 1400px) {
+  .duration__bar {
+    display: flex;
+  }
+}

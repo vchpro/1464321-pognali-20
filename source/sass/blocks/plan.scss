@@ -33,3 +33,15 @@
   color: $zero-black;
   opacity: 0.3;
 }
+
+@media (min-width: 768px) {
+  .plan br:not(.plan__direction-br) {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .plan br {
+    display: none;
+  }
+}

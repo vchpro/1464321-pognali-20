@@ -25,6 +25,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $basic-blue-light;
+  display: block;
 }
 
 .plan-step__back-step {
@@ -38,4 +39,10 @@
 
 .plan-step__add-country {
   background-color: $extra-white;
+}
+
+@media (min-width: 768px) {
+  .plan-step__next-step {
+    display: inline;
+  }
 }
