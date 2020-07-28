@@ -7,6 +7,20 @@
   opacity: 0.3;
 }
 
+.continent-list {
+  list-style: none;
+  padding: 0;
+}
+
 .continent-list__item--active {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .continent-list {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: space-between;
+  }
 }
