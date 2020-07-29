@@ -15,15 +15,13 @@
 }
 
 @media (min-width: 768px) {
-
   .countries-list--tablet {
-    grid-row: 2/3;
-    grid-column: 2/3;
+    margin-top: -10px;
+    margin-left: 200px;
   }
 }
 
 @media (min-width: 1400px) {
-
   .countries-list:not(.countries-list--tablet) {
     display: contents;
   }

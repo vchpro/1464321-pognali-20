@@ -12,3 +12,14 @@
   color: $special-grey;
   margin-top: 6px;
 }
+
+.business-list {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .business-list__item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
