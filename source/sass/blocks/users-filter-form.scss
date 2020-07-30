@@ -14,3 +14,18 @@
   text-transform: uppercase;
   color: $basic-blue;
 }
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .users-filter-form__lists {
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .users-filter-form {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}

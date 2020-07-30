@@ -32,16 +32,20 @@
         </ul>
       </nav>
 
+      <a href="" class="page-header__auth">Авторизация</a>
       <ul class="page-contacts">
         <li>
-          <a href="tel:88005558628" class="page-contacts__link">8 800 555-86-28</a>
+          <a href="tel:88005558628" class="page-contacts__link">
+            <span class="visually-hidden">8 800 555-86-28</span>
+          </a>
         </li>
 
         <li>
-          <a href="mailto:mail@htmlacademy.ru" class="page-contacts__link">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru" class="page-contacts__link">
+            <span class="visually-hidden">mail@htmlacademy.ru</span>
+          </a>
         </li>
       </ul>
-      <a href="" class="page-header__auth">Авторизация</a>
 
       <div class="page-header__menu page-menu">
 
@@ -65,42 +69,47 @@
           </li>
         </ul>
       </div>
+
+      <h1 class="page-header__heading">Направления</h1>
     </header>
 
     <main>
       <section class="create-direction">
         <form method="POST" action="https://echo.htmlacademy.ru">
           <h2 class="visually-hidden">Новое направление</h2>
+          <div class="profile">
+            <div class="profile-level">
+              <span class="profile-level__level-count">80</span>
+              <span class="profile-level__level-text">level</span>
+            </div>
+            <img src="" alt="Фото вашего профиля" class="profile__photo">
+            <input type="file" class="profile__change-photo" id="change-photo" name="change-photo">
+            <label for="change-photo" class="profile__change-label">Сменить фото</label>
 
-          <div class="profile-level">
-            <span class="profile-level__level-count">80</span>
-            <span class="profile-level__level-text">level</span>
-          </div>
-          <img src="" alt="Фото вашего профиля" class="create-direction__photo">
-          <input type="file" class="create-direction__change-photo" id="change-photo" name="change-photo">
-          <label for="change-photo" class="create-direction__change-label">Сменить фото</label>
+            <div class="my-tags">
+              <label for="my-tags" class="my-tags__label">Теги</label>
+              <textarea class="my-tags__tags" id="my-tags" name="my-tags">
+                #бургер #бар #футбол #концерт #крафт
+              </textarea>
+            </div>
 
-          <div class="my-tags">
-            <label for="my-tags" class="my-tags__label">Теги</label>
-            <textarea class="my-tags__tags" id="my-tags" name="my-tags">
-              #бургер #бар #футбол #концерт #крафт
-            </textarea>
-          </div>
+            <div class="profile__transport transport">
+              <h3 class="transport__heading">Транспорт</h3>
+              <div class="transport__checkboxes">
+                <input type="checkbox" name="transport-aero" class="transport__checkbox" checked id="transport-aero">
+                <label for="transport-aero" class="visually-hidden">На самолете</label>
 
-          <div class="transport">
-            <h3 class="transport__heading">Транспорт</h3>
-            <input type="checkbox" name="transport-aero" class="transport__checkbox" checked id="transport-aero">
-            <label for="transport-aero" class="visually-hidden">На самолете</label>
+                <input type="checkbox" name="transport-autobus" class="transport__checkbox" checked id="transport-autobus">
+                <label for="transport-autobus" class="visually-hidden">На автобусе</label>
 
-            <input type="checkbox" name="transport-autobus" class="transport__checkbox" checked id="transport-autobus">
-            <label for="transport-autobus" class="visually-hidden">На автобусе</label>
+                <input type="checkbox" name="transport-velo" class="transport__checkbox" id="transport-velo">
+                <label for="transport-velo" class="visually-hidden">На велосипеде</label>
 
-            <input type="checkbox" name="transport-velo" class="transport__checkbox" id="transport-velo">
-            <label for="transport-velo" class="visually-hidden">На велосипеде</label>
-
-            <input type="checkbox" name="transport-feet" class="transport__checkbox" id="transport-feet">
-            <label for="transport-feet" class="visually-hidden">Пешком</label>
-          </div>
+                <input type="checkbox" name="transport-feet" class="transport__checkbox" id="transport-feet">
+                <label for="transport-feet" class="visually-hidden">Пешком</label>
+              </div>
+            </div>
+        </div>
 
           <section class="my-plans">
             <h3 class="my-plans__heading">Мои планы</h3>
@@ -174,14 +183,20 @@
                 <h5 class="duration__heading">Длительность:</h5>
                 <p class="duration__text">ДН.</p>
 
-                <button type="button" class="duration__minus">-</button>
-                <input type="number" class="duration__input" id="duration" name="duration">
-                <label for="duration">Количество попутчиков</label>
-                <button type="button" class="duration__plus">+</button>
-              </div>
+                <div class="duration__bar">
+                  <button type="button" class="duration__minus">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <input type="number" class="duration__input" id="duration" name="duration" value="2">
+                  <label for="duration">Длительность поездки</label>
+                  <button type="button" class="duration__plus">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
 
-              <input type="checkbox" class="plan-step__children-input" name="children" id="children">
-              <label class="plan-step__children-label" for="children">Можно с детьми</label>
+                  <input type="checkbox" class="plan-step__children-input" name="children" id="children">
+                  <label class="plan-step__children-label" for="children">Можно с детьми</label>
+                </div>
+              </div>
 
               <div class="calendar">
                 <button type="button" class="calendar__last-month">

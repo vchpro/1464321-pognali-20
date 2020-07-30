@@ -1,0 +1,9 @@
+@media (min-width: 1400px) {
+  .main-photo-container {
+    display: grid;
+    grid-template-columns: 951px 285px;
+    grid-template-rows: 1fr 1fr;
+    gap: 83px;
+    justify-content: center;
+  }
+}

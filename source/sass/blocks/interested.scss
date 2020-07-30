@@ -1,6 +1,9 @@
 .interested {
   padding-left: 52px;
   padding-right: 52px;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .insterested__heading {
@@ -16,9 +19,27 @@
   line-height: 22px;
   text-align: center;
   color: $white;
+  width: 216px;
+  margin: 0 auto;
 }
 
 .interested__link {
   color: $basic-yellow;
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .interested {
+    width: 638px;
+  }
+
+  .interested__text {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .interested {
+    width: 1180px;
+  }
 }

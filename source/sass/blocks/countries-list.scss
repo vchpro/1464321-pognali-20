@@ -4,3 +4,25 @@
   line-height: 22px;
   color: $special-grey;
 }
+
+.countries-list {
+  list-style: none;
+  padding: 0;
+}
+
+.countries-list:not(.countries-list--tablet) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .countries-list--tablet {
+    margin-top: -10px;
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .countries-list:not(.countries-list--tablet) {
+    display: contents;
+  }
+}

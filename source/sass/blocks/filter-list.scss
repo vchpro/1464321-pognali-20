@@ -4,3 +4,19 @@
   line-height: 20px;
   color: $zero-black;
 }
+
+.filter-list {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-list:not(.filter-list--active) {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .filter-list {
+    width: 460px;
+    display: flex;
+  }
+}

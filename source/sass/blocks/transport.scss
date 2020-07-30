@@ -2,7 +2,27 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  text-align: center;
   text-transform: uppercase;
   color: $basic-blue-light;
+}
+
+.transport {
+  height: 50px;
+  width: 112px;
+}
+
+@media (min-width: 768px) {
+  .transport {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .transport__heading {
+    grid-row: 2/3;
+  }
+
+  .my-tags__label {
+    grid-row: 2/3;
+  }
 }
