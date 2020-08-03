@@ -7,7 +7,7 @@
   border-radius: 20px;
 
   &:hover {
-    filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0 4px 9px $black-016);
   }
 }
 
@@ -15,15 +15,15 @@
   margin-top: -9px;
 }
 
-.user:nth-of-type(2) .user__invite{
+.user:nth-of-type(2) .user__invite {
   margin-top: 15px;
 }
 
-.user:nth-of-type(3) .user__invite{
+.user:nth-of-type(3) .user__invite {
   margin-top: 31px;
 }
 
-.user:nth-of-type(4) .user__invite{
+.user:nth-of-type(4) .user__invite {
   margin-top: 18px;
 }
 
@@ -94,7 +94,6 @@
   text-decoration: none;
   background-color: $basic-yellow;
   border-radius: 25px;
-  margin-top: 24px;
   margin-left: 20px;
   padding-top: 13px;
 
@@ -136,7 +135,6 @@
   }
 
   .user__tags {
-    margin-top: auto;
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: 20px;
@@ -183,15 +181,15 @@
     margin-top: 40px;
   }
 
-  .user:nth-of-type(2) .user__invite{
+  .user:nth-of-type(2) .user__invite {
     margin-top: 82px;
   }
 
-  .user:nth-of-type(3) .user__invite{
+  .user:nth-of-type(3) .user__invite {
     margin-top: 82px;
   }
 
-  .user:nth-of-type(4) .user__invite{
+  .user:nth-of-type(4) .user__invite {
     margin-top: 82px;
   }
 }
@@ -214,6 +212,7 @@
 
   .user:nth-of-type(4) {
     min-height: 285px;
+    margin-top: 32px;
   }
 
   .user__transport {
@@ -248,19 +247,15 @@
     margin-top: 34px;
   }
 
-  .user:nth-of-type(4) {
-    margin-top: 32px;
-  }
-
-  .user:nth-of-type(2) .user__invite{
+  .user:nth-of-type(2) .user__invite {
     margin-top: 94px;
   }
 
-  .user:nth-of-type(3) .user__invite{
+  .user:nth-of-type(3) .user__invite {
     margin-top: 90px;
   }
 
-  .user:nth-of-type(4) .user__invite{
+  .user:nth-of-type(4) .user__invite {
     margin-top: 88px;
   }
 }
