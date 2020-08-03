@@ -1,7 +1,7 @@
 .companion-level {
   position: absolute;
   top: 17px;
-  left: 17px;
+  left: 35px;
 }
 
 .companion-level__count {
@@ -9,11 +9,12 @@
   font-size: 24px;
   line-height: 24px;
   color: $white;
+  display: block;
 }
 
 .companion-level__text {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 15px;
   color: $white;
 }

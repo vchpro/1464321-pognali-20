@@ -1,6 +1,9 @@
 .companions-list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  width: 270px;
+  margin: 0 auto;
+  padding-top: 70px;
 }
 
 @media (min-width: 768px) {
@@ -16,7 +19,7 @@
   .companions-list {
     width: 630px;
     grid-column: 2/3;
-    grid-row: 1/4;
-    margin: 0 auto;
+    grid-row: 1/5;
+    margin: 0;
   }
 }

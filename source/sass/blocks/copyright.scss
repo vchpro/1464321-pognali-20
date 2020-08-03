@@ -1,5 +1,8 @@
 .copyright {
   display: flex;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .copyright__text {
@@ -7,10 +10,30 @@
   font-size: 16px;
   line-height: 16px;
   color: $special-grey;
+  padding-left: 9px;
+  padding-top: 8px;
 }
 
 .copyright__img {
   display: block;
   width: 67px;
-  margin-left: 23px;
+  margin-left: 160px;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .copyright__text {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0px;
+    padding-top: 1px;
+  }
+
+  .copyright__img {
+    margin-left: 23px;
+  }
 }

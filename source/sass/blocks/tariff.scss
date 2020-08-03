@@ -2,6 +2,51 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
+  position: relative;
+}
+
+.tariff:not(:first-of-type) {
+  margin-top: 28px;
+}
+
+.tariff::after {
+  content: counter(tariff);
+  counter-increment: tariff;
+  position: absolute;
+  top: -11px;
+  right: -26px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding-top: 9px;
+  padding-left: 13px;
+  color: $white;
+}
+
+.tariff::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #E1E3E9;
+  width: 200px;
+  height: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -15px;
+}
+
+
+.tariff:nth-of-type(3n + 1)::after {
+  background-color: $special-orange;
+}
+
+.tariff:nth-of-type(3n + 2)::after {
+  background-color: $special-yellow-dark;
+}
+
+.tariff:nth-of-type(3n + 3)::after {
+  background-color: $basic-yellow;
 }
 
 .tariff__service {
@@ -12,22 +57,61 @@
 
 .tariff__price {
   color: $special-grey;
-  margin-top: 6px;
   max-width: 200px;
+  display: block;
+  padding-top: 6px;
 }
 
 
 @media (min-width: 768px) {
   .tariff {
-    width: 688px;
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
+  }
+
+  .tariff__service {
+    font-size: 28px;
+    line-height: 28px;
+    width: 320px;
+  }
+
+  .tariff:not(:first-of-type) {
+    margin-top: 38px;
+  }
+
+  .tariff::after {
+    width: 68px;
+    height: 68px;
+    left: -90px;
+    top: -18px;
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 20px;
+    padding-left: 27px;
+  }
+
+  .tariff::before {
+    width: 561px;
+    top: -18px;
+  }
+
+  .tariff__price {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: auto;
+    padding-right: 58px;
+    padding-top: 1px;
+    position: relative;
+    z-index: 10;
   }
 }
 
 @media (min-width: 1400px) {
   .tariff {
     width: 814px;
+  }
+
+  .tariff__price {
+    padding-right: 0px;
   }
 }

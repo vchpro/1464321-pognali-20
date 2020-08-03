@@ -7,12 +7,43 @@
   font-size: 16px;
   line-height: 22px;
   color: $white;
+  padding-bottom: 2px;
 }
 
 .quote__author {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   color: $white;
-  margin-top: 18px;
+  display: block;
+  width: 181px;
+  font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .quote {
+    padding-top: 33px;
+  }
+
+  .quote__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .quote__author {
+    width: 251px;
+    font-size: 21px;
+    line-height: 25px;
+    padding-top: 16px;
+  }
+
+  .quote__author br {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .quote__author {
+    padding-top: 14px;
+  }
 }

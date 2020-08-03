@@ -1,3 +1,60 @@
 .tariff-list {
   list-style: none;
+  padding: 0;
+  padding-top: 38px;
+  counter-reset: tariff;
+  position: relative;
+}
+
+.tariff-list::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #E1E3E9;
+  width: 200px;
+  height: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -15px;
+}
+
+@media (min-width: 768px) {
+  .tariff-list {
+    margin-top: 55px;
+    margin-left: 115px;
+    position: relative;
+  }
+
+  .tariff-list::after {
+    width: 561px;
+    bottom: -21px;
+  }
+
+  .tariff-list::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 198px;
+    height: 285px;
+    right: 25px;
+    top: -20px;
+    border-radius: 20px;
+    background-color: $extra-grey;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tariff-list {
+    width: 813px;
+    padding-left: 132px;
+    padding-top: 99px;
+  }
+
+  .tariff-list::before {
+    width: 446px;
+    height: 300px;
+    right: -162px;
+    top: 30px;
+    border-radius: 20px;
+  }
 }

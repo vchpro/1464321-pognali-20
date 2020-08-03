@@ -1,9 +1,10 @@
 .directions {
   list-style: none;
   background-color: $extra-white;
-  padding-top: 71px;
-  padding-left: 49px;
-  padding-right: 49px;
+  padding-top: 70px;
+  padding-bottom: 34px;
+  margin: 0 auto;
+  width: 270px;
 }
 
 .directions__heading {
@@ -12,7 +13,8 @@
   font-size: 24px;
   line-height: 24px;
   color: $special-orange;
-  width: 269px;
+  width: 220px;
+  margin: 0 auto;
 }
 
 .directions__about {
@@ -20,8 +22,26 @@
   font-size: 16px;
   line-height: 22px;
   color: $special-grey;
-  margin-top: 19px;
-  width: 216px;
+  width: 220px;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+
+.directions__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-blue-light;
+  background-color: $basic-yellow;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+  width: 270px;
+  min-height: 62px;
+  margin-top: 2px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 24px;
 }
 
 @media (min-width: 768px) {
@@ -29,23 +49,69 @@
     padding-left: 0;
     padding-right: 0;
     display: grid;
-    justify-content: center;
+    width: 620px;
+    padding-bottom: 80px;
+  }
+
+  .directions__heading {
+    font-size: 45px;
+    line-height: 45px;
+    width: 269px;
+    margin: 0;
+  }
+
+  .directions__about {
+    margin: 0;
+    font-size: 28px;
+    line-height: 33px;
+    padding-top: 57px;
+    padding-left: 2px;
+    width: 378px;
+  }
+
+  .directions__button {
+    font-size: 24px;
+    line-height: 24px;
+    width: 616px;
+    min-height: 82px;
+    border-radius: 20px;
+    margin-top: 29px;
+    margin-left: 1px;
+    padding-top: 30px;
+    padding-left: 33px;
   }
 }
 
 @media (min-width: 1400px) {
   .directions {
-    grid-template-columns: 630px 300px;
-    grid-template-rows: 45px 140px 180px;
+    padding-top: 100px;
+    padding-bottom: 138px;
+    width: 1400px;
+    grid-template-columns: 559px 501px 340px;
+    justify-content: center;
   }
 
   .directions__heading {
-    grid-column: 2/3;
+    padding-top: 60px;
+    padding-left: 329px;
+    grid-column: 2/4;
     grid-row: 1/2;
   }
 
   .directions__about {
-    grid-column: 2/3;
+    grid-column: 2/4;
+    padding-left: 329px;
+    padding-top: 61px;
     grid-row: 2/3;
+  }
+
+  .directions__button {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 275px;
+    margin-top: 100px;
+    margin-left: 330px;
+    padding-top: 27px;
+    height: 80px;
   }
 }

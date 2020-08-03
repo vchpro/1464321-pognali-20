@@ -16,7 +16,7 @@
         <span class="visually-hidden">Меню</span>
       </button>
 
-      <nav class="page-nav">
+      <nav class="page-nav" style="display: none;">
         <ul class="nav-list">
           <li>
             <a class="nav-list__link nav-list__link--active">О сервисе</a>
@@ -32,8 +32,8 @@
         </ul>
       </nav>
 
-      <a href="" class="page-header__auth">Авторизация</a>
-      <ul class="page-contacts">
+      <a href="" class="page-header__auth" style="display: none;">Авторизация</a>
+      <ul class="page-contacts" style="display: none;">
         <li>
           <a href="tel:88005558628" class="page-contacts__link">
             <span class="visually-hidden">8 800 555-86-28</span>
@@ -47,7 +47,7 @@
         </li>
       </ul>
 
-      <div class="page-header__menu page-menu">
+      <div class="page-header__menu page-menu" style="display: none;">
 
         <ul class="page-social">
           <li>
@@ -87,18 +87,26 @@
         <div class="promo-quote">
           <blockquote class="quote">
             <p class="quote__text">«Лучшее приложение,<br>что я видел в жизни!»</p>
-            <cite class="quote__author">Мурат Эльтазин<br>главный редактор<br>газеты «гаджетлайф»</cite>
+            <cite class="quote__author">Мурат Эльтазин главный&nbsp;редактор <br>газеты «гаджетлайф»</cite>
           </blockquote>
         </div>
 
         <ol class="promo-guide">
-          <li class="promo-guide__step">Выберите направление</li>
+          <li class="promo-guide__step">
+            <span class="promo-guide__text">Выберите направление</span>
+          </li>
 
-          <li class="promo-guide__step">Изучите идеи путешественников</li>
+          <li class="promo-guide__step">
+            <span class="promo-guide__text">Изучите идеи путешественников</span>
+          </li>
 
-          <li class="promo-guide__step">Находите тех, кто похож на вас</li>
+          <li class="promo-guide__step">
+            <span class="promo-guide__text">Находите тех, кто&nbsp;похож на вас</span>
+          </li>
 
-          <li class="promo-guide__step">Путешествуйте вместе!</li>
+          <li class="promo-guide__step">
+            <span class="promo-guide__text">Путешествуйте вместе!</span>
+          </li>
         </ol>
       </div>
 
@@ -106,48 +114,58 @@
         <h2 class="about__heading">О сервисе</h2>
         <p class="about__content">
           Любое путешествие веселее
-          с попутчиками, которые на
-          одной волне с тобой!
-          Делитесь своими идеями путешествий и
-          черпайте вдохновение в чужих.
+          с&nbsp;попутчиками, которые на
+          одной волне с&nbsp;тобой!
+          Делитесь своими идеями<br class="about__br"> путешествий<br> и
+          черпайте вдохновение в&nbsp;чужих.
         </p>
 
         <p class="about__content about__content--accent">
           А если найдете кого-то
-          близкого по духу — скорее
+          близкого по духу &mdash; скорее
           зовите в совместный трип!
         </p>
+
+        <a href="#" class="about__button">Подробнее</a>
       </section>
 
       <section class="directions">
         <h2 class="directions__heading">Направления</h2>
         <p class="directions__about">
           Мы не продаем туры
-          и ничего не рекламируем.
-          Люди сами пишут о странах,
+          и&nbsp;ничего&nbsp;не рекламируем.
+          Люди&nbsp;сами пишут о странах,
           куда хотели бы отправиться
-          и чем можно там заняться.
+          и&nbsp;чем можно там заняться.
         </p>
 
         <ul class="directions-list">
           <li class="directions__item direction-country">
-            <h3 class="direction-country__heading">Таиланд</h3>
-            <p class="direction-country__promo-text">Джунгли зовут!</p>
-            <p class="direction-country__people-count">18321</p>
+            <div class="direction-country__content">
+              <h3 class="direction-country__heading">Таиланд</h3>
+              <p class="direction-country__promo-text">Джунгли зовут!</p>
+              <p class="direction-country__people-count">18321</p>
+            </div>
           </li>
 
           <li class="directions__item direction-country">
-            <h3 class="direction-country__heading">Франция</h3>
-            <p class="direction-country__promo-text">Трэ бьен, манифик!</p>
-            <p class="direction-country__people-count">12518</p>
+            <div class="direction-country__content">
+              <h3 class="direction-country__heading">Франция</h3>
+              <p class="direction-country__promo-text">Трэ бьен, манифик!</p>
+              <p class="direction-country__people-count">12518</p>
+            </div>
           </li>
 
           <li class="directions__item direction-country">
-            <h3 class="direction-country__heading">Чехия</h3>
-            <p class="direction-country__promo-text">Закоулки старой Европы</p>
-            <p class="direction-country__people-count">5326</p>
+            <div class="direction-country__content">
+              <h3 class="direction-country__heading">Чехия</h3>
+              <p class="direction-country__promo-text">Закоулки старой Европы</p>
+              <p class="direction-country__people-count">5326</p>
+            </div>
           </li>
         </ul>
+
+        <a href="form.html" class="directions__button">Показать все</a>
       </section>
 
       <section class="companions">
@@ -156,7 +174,7 @@
           Все мы индивидуальны и у
           каждого свой взгляд на
           идеальный отдых. Одному нужен
-          пляж и коктейль, а другому
+          пляж и коктейль,<br> а другому
           маршрут для хайкинга
         </p>
 
@@ -185,27 +203,30 @@
               </li>
             </ul>
 
-            <h3 class="promo-companion__name promo-companion__name--online">Таня Фирсова</h3>
-            <p class="promo-companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <div class="promo-companion__content">
+              <h3 class="promo-companion__name promo-companion__name--online">Таня Фирсова</h3>
+              <p class="promo-companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
 
-            <ul class="companions__list__item__transport-list promo-companion-transport">
-              <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport-item">
-                <span class="visually-hidden">На самолете</span>
-              </li>
+              <ul class="companions__list__item__transport-list promo-companion-transport">
+                <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport-item">
+                  <span class="visually-hidden">На самолете</span>
+                </li>
 
-              <li class="promo-companion-transport__item promo-transport-item">
-                <span class="visually-hidden">На автобусе</span>
-              </li>
+                <li class="promo-companion-transport__item promo-transport-item">
+                  <span class="visually-hidden">На автобусе</span>
+                </li>
 
-              <li class="promo-companion-transport__item promo-transport-item">
-                <span class="visually-hidden">На велосипеде</span>
-              </li>
+                <li class="promo-companion-transport__item promo-transport-item">
+                  <span class="visually-hidden">На велосипеде</span>
+                </li>
 
-              <li class="promo-companion-transport__item promo-transport-item">
-                <span class="visually-hidden">Пешком</span>
-              </li>
-            </ul>
+                <li class="promo-companion-transport__item promo-transport-item">
+                  <span class="visually-hidden">Пешком</span>
+                </li>
+              </ul>
+            </div>
           </li>
+
 
           <li class="companions-list__item promo-companion">
             <div class="promo-companion__level companion-level">
@@ -225,25 +246,27 @@
               </li>
             </ul>
 
-            <h3 class="promo-companion__name promo-companion__name--online">Петя Демин</h3>
-            <span class="promo-companion__tags">#бургер #бар #футбол #концерт #крафт</span>
+            <div class="promo-companion__content">
+              <h3 class="promo-companion__name promo-companion__name--online">Петя Демин</h3>
+              <span class="promo-companion__tags">#бургер #бар #футбол<br> #концерт&nbsp;#крафт</span>
 
-            <ul class="companions__list__item__transport-list promo-companion-transport">
-              <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport">
-                <span class="visually-hidden">На самолете</span>
-              </li>
+              <ul class="companions__list__item__transport-list promo-companion-transport">
+                <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport">
+                  <span class="visually-hidden">На самолете</span>
+                </li>
 
-              <li class="promo-companion-transport__item promo-transport">
-                <span class="visually-hidden">На автобусе</span>
-              </li>
-              <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport">
-                <span class="visually-hidden">На велосипеде</span>
-              </li>
+                <li class="promo-companion-transport__item promo-transport">
+                  <span class="visually-hidden">На автобусе</span>
+                </li>
+                <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport">
+                  <span class="visually-hidden">На велосипеде</span>
+                </li>
 
-              <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport">
-                <span class="visually-hidden">Пешком</span>
-              </li>
-            </ul>
+                <li class="promo-companion-transport__item promo-companion-transport__item--selected promo-transport">
+                  <span class="visually-hidden">Пешком</span>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
 
@@ -272,7 +295,7 @@
 
         <a href="#" class="add-profile__show-business">Показать тарифы для бизнеса</a>
 
-        <article class="business-tariff">
+        <article class="business-tariff" style="display: none;">
           <h2 class="business-tariff__heading">Бизнес-тарифы</h2>
 
           <ul class="business-list">

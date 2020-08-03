@@ -2,6 +2,7 @@
   background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-color: $basic-blue;
   background-repeat: no-repeat;
+  padding-top: 50px;
 }
 
 .promo__phrase {
@@ -14,10 +15,21 @@
   text-align: center;
 }
 
+// Почему на планшетной версии .promo__phrase не в пп?
+
+@media (min-width: 768px) {
+  .promo__phrase {
+    font-size: 60px;
+    line-height: 70px;
+    width: 399px;
+  }
+}
+
 @media (min-width: 1400px) {
   .promo {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 660px 660px;
     justify-content: center;
   }
 
@@ -25,7 +37,10 @@
     grid-row: 1/2;
     grid-column: 1/2;
     display: block;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 160px;
+    padding-right: 148px;
+    text-align: left;
   }
 }

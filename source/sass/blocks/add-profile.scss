@@ -1,8 +1,7 @@
 .add-profile {
   background-color: $extra-white;
-  padding-top: 53px;
-  padding-left: 29px;
-  padding-right: 25px;
+  padding-top: 30px;
+  width: 219px;
   margin: 0 auto;
 }
 
@@ -11,6 +10,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $special-orange;
+  width: 107px;
 }
 
 .add-profile__show-business {
@@ -20,7 +20,8 @@
   color: $extra-blue;
   text-decoration: none;
   display: block;
-  margin-top: 58px;
+  margin-top: 44px;
+  color: $extra-blue;
 }
 
 @media (min-width: 768px) {
@@ -31,7 +32,12 @@
   }
 
   .add-profile__heading {
-    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+    width: 482px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-left: 4px;
   }
 
   .add-profile__tariff-list {
@@ -39,14 +45,34 @@
   }
 
   .add-profile__show-business {
-    width: 222px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 274px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 75px;
+    margin-left: 114px;
+    position: relative;
+  }
+
+  .add-profile__show-business::before {
+    content: "";
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $extra-grey;
+    top: -20px;
+    left: -90px;
   }
 }
 
 @media (min-width: 1400px) {
   .add-profile {
-    width: 1177px;
+    width: 1400px;
+  }
+
+  .add-profile__heading {
+    width: 502px;
+    padding-left: 118px;
+    padding-top: 32px;
   }
 }

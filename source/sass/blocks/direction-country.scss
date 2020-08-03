@@ -1,6 +1,23 @@
 .direction-country {
   font-weight: 500;
   font-size: 16px;
+  min-height: 190px;
+  width: 270px;
+}
+
+.direction-country__content {
+  display: grid;
+  grid-template-columns: 158px 101px;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.direction-country:not(:first-of-type) {
+  margin-top: 25px;
+}
+
+.direction-country:last-of-type {
+  margin-top: 7px;
 }
 
 .direction-country__heading {
@@ -8,35 +25,92 @@
   font-size: 21px;
   line-height: 21px;
   color: $full-black;
+  padding-left: 24px;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .direction-country__promo-text {
   line-height: 18px;
   color: $special-grey;
   opacity: 0.3;
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 1px;
 }
 
 .direction-country__people-count {
   line-height: 20px;
   color: $basic-blue;
   opacity: 0.3;
+  padding-left: 47px;
+  padding-top: 3px;
+  margin: 0;
+  display: block;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .direction-country {
-    width: 222px;
-    display: grid;
-    grid-template-columns: 178px 61px;
+    min-height: 140px;
+  }
+
+  .direction-country__content {
+    display: block;
+    width: 617px;
+    min-height: 140px;
+    border-radius: 20px;
+  }
+
+  .direction-country:last-of-type .direction-country__content {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, $white 0px, $transparent-white 46px);
   }
 
   .direction-country__heading {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 29px;
+    padding-top: 28px;
+  }
+
+  .direction-country__promo-text {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 28px;
+    padding-top: 4px;
   }
 
   .direction-country__people-count {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    padding-left: 58px;
+    padding-top: 20px;
+  }
+
+  .direction-country:not(:first-of-type) {
+    margin-top: 11px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .direction-country__heading {
+    padding-left: 31px;
+    padding-top: 22px;
+  }
+
+  .direction-country__promo-text {
+    padding-left: 32px;
+    padding-top: 3px;
+  }
+
+  .direction-country__people-count {
+    padding-left: 63px;
+    padding-top: 26px;
   }
 }

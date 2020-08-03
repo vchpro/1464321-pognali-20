@@ -3,7 +3,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
-  margin-top: 245px;
+  margin-top: 248px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -13,11 +13,33 @@
 .promo-buttons__phone,
 .promo-buttons__mail,
 .promo-buttons__auth {
-  display: block;
-  background-color: tomato;
-  margin-left: 10px;
-  min-height: 50px;
-  min-width: 50px;
+  width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+}
+
+.promo-buttons__phone {
+  background-color: $special-orange;
+}
+
+.promo-buttons__mail {
+  background-color: $special-yellow-dark;
+}
+
+.promo-buttons__auth {
+  background-color: $basic-yellow;
+  width: 190px;
+  border-radius: 25px;
+  font-weight: bold;
+  // Фигма говорит 17px - размер шрифта. Но это совсем не так
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-blue;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 32px;
+  padding-top: 11px;
+  box-sizing: border-box;
 }
 
 // End Template
