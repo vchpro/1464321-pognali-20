@@ -15,8 +15,6 @@
   text-align: center;
 }
 
-// Почему на планшетной версии .promo__phrase не в пп?
-
 @media (min-width: 768px) {
   .promo__phrase {
     font-size: 60px;
@@ -29,8 +27,9 @@
   .promo {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 660px 660px;
+    grid-template-columns: 515px 805px;
     justify-content: center;
+    padding-top: 93px;
   }
 
   .promo__phrase {
@@ -39,8 +38,7 @@
     display: block;
     margin-right: 0;
     margin-left: auto;
-    margin-top: 160px;
-    padding-right: 148px;
     text-align: left;
+    margin-top: 14px;
   }
 }

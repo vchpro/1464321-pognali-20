@@ -36,7 +36,6 @@
   top: -15px;
 }
 
-
 .tariff:nth-of-type(3n + 1)::after {
   background-color: $special-orange;
 }
@@ -59,14 +58,14 @@
   color: $special-grey;
   max-width: 200px;
   display: block;
-  padding-top: 6px;
+  margin-top: 6px;
 }
-
 
 @media (min-width: 768px) {
   .tariff {
     display: flex;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tariff__service {
@@ -99,8 +98,8 @@
     font-size: 28px;
     line-height: 28px;
     margin-left: auto;
-    padding-right: 58px;
-    padding-top: 1px;
+    margin-right: 58px;
+    margin-top: 1px;
     position: relative;
     z-index: 10;
   }
@@ -112,6 +111,6 @@
   }
 
   .tariff__price {
-    padding-right: 0;
+    margin-right: 0;
   }
 }

@@ -16,6 +16,18 @@
   .nav-list {
     display: flex;
     justify-content: space-between;
+    width: 390px;
+    margin-right: auto;
+    margin-left: 112px;
     grid-column: 2/3;
+    margin-bottom: 0;
+  }
+
+  .nav-list__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $white;
   }
 }

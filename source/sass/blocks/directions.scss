@@ -84,24 +84,27 @@
 
 @media (min-width: 1400px) {
   .directions {
+    padding-left: 315px;
     padding-top: 100px;
     padding-bottom: 138px;
-    width: 1400px;
-    grid-template-columns: 559px 501px 340px;
+    grid-template-columns: 559px 500px;
     justify-content: center;
+    column-gap: 327px;
   }
 
   .directions__heading {
-    padding-top: 60px;
-    padding-left: 329px;
+    margin-top: 62px;
+    padding-left: 0;
     grid-column: 2/4;
     grid-row: 1/2;
   }
 
   .directions__about {
     grid-column: 2/4;
-    padding-left: 329px;
-    padding-top: 61px;
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 59px;
+    margin-left: 2px;
     grid-row: 2/3;
   }
 
@@ -110,7 +113,7 @@
     grid-column: 2/3;
     width: 275px;
     margin-top: 100px;
-    margin-left: 330px;
+    margin-left: 0;
     padding-top: 27px;
     height: 80px;
   }

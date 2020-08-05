@@ -7,7 +7,6 @@
 
 @media (min-width: 768px) {
   .promo-quote {
-    padding-right: 116px;
     width: 585px;
   }
 }
@@ -16,10 +15,12 @@
   .promo-quote {
     grid-row: 1/2;
     grid-column: 2/3;
-    margin-right: auto;
-    margin-left: 0;
-    width: 300px;
-    padding-top: 71px;
-    padding-left: 380px;
+    width: 257px;
+    margin-top: 0px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: -20px;
+    margin-left: auto;
   }
 }

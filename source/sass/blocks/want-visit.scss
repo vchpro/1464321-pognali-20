@@ -10,7 +10,7 @@
   color: $special-grey;
   background: $white;
   margin-top: -10px;
-  width: 96px;
+  min-width: 96px;
   margin-left: 15px;
   padding-left: 11px;
   padding-right: 10px;
@@ -19,7 +19,7 @@
 @media (min-width: 768px) and (max-width: 1400px) {
   .want-visit__list {
     display: flex;
-    width: 300px;
+    min-width: 300px;
     justify-content: space-between;
   }
 }
