@@ -87,7 +87,6 @@
   text-transform: uppercase;
   color: $basic-blue;
   margin-top: 13px;
-  min-height: 40px;
   display: block;
   text-decoration: none;
   background-color: $basic-yellow;
@@ -154,6 +153,7 @@
     line-height: 20px;
     margin-top: 82px;
     margin-left: 29px;
+    padding-bottom: 36px;
   }
 
   .user__like {
