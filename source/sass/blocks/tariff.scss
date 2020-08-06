@@ -36,15 +36,15 @@
   top: -15px;
 }
 
-.tariff:nth-of-type(3n + 1)::after {
+.tariff:nth-of-type(3n - 3)::after {
   background-color: $special-orange;
 }
 
-.tariff:nth-of-type(3n + 2)::after {
+.tariff:nth-of-type(3n - 2)::after {
   background-color: $special-yellow-dark;
 }
 
-.tariff:nth-of-type(3n + 3)::after {
+.tariff:nth-of-type(3n - 1)::after {
   background-color: $basic-yellow;
 }
 

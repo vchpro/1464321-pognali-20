@@ -29,20 +29,20 @@
 }
 
 .directions__button {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: $basic-blue-light;
-  background-color: $basic-yellow;
+  display: inline-block;
   text-decoration: none;
-  border-radius: 10px;
-  display: block;
-  width: 270px;
-  min-height: 62px;
-  margin-top: 2px;
-  box-sizing: border-box;
-  padding-top: 20px;
-  padding-left: 24px;
+  border-radius: 20px;
+  background-color: $basic-yellow;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-blue-light;
+  width: 243px;
+  min-height: 52px;
+  padding-top: 28px;
+  padding-left: 33px;
+  margin-top: 53px;
+  margin-left: 110px;
 }
 
 @media (min-width: 768px) {
@@ -73,8 +73,6 @@
   .directions__button {
     font-size: 24px;
     line-height: 24px;
-    width: 616px;
-    min-height: 82px;
     border-radius: 20px;
     margin-top: 29px;
     padding-top: 30px;
@@ -115,6 +113,5 @@
     margin-top: 100px;
     margin-left: 0;
     padding-top: 27px;
-    height: 80px;
   }
 }

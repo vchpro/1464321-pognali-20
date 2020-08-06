@@ -63,11 +63,17 @@
     width: 617px;
     min-height: 140px;
     border-radius: 20px;
+    position: relative;
   }
 
-  .direction-country:last-of-type .direction-country__content {
+  .direction-country:last-of-type .direction-country__content::before {
+    content: "";
+    width: 617px;
+    height: 70px;
     background-color: transparent;
     background-image: linear-gradient(to bottom, $white 0, rgba($white, 0.2) 46px);
+    position: absolute;
+    bottom: 0;
   }
 
   .direction-country__heading {

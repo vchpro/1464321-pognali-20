@@ -43,19 +43,19 @@
 
 // Таким методом переполняется нормально
 
-.promo-guide__step:nth-of-type(4n+1) {
+.promo-guide__step:nth-child(4n-3) {
   background-color: $special-orange;
 }
 
-.promo-guide__step:nth-of-type(4n+2) {
+.promo-guide__step:nth-child(4n-2) {
   background-color: $extra-orange;
 }
 
-.promo-guide__step:nth-of-type(4n+3) {
+.promo-guide__step:nth-child(4n-1) {
   background-color: $special-yellow-dark;
 }
 
-.promo-guide__step:nth-of-type(4n+4) {
+.promo-guide__step:nth-child(4n) {
   background-color: $basic-yellow;
 }
 
@@ -69,7 +69,6 @@
   }
 
   .promo-guide__step {
-    width: 344px;
     min-height: 112px;
     border-radius: 0;
     font-size: 24px;
@@ -83,20 +82,20 @@
     margin-top: 0;
   }
 
-  .promo-guide__step:nth-of-type(1) {
+  .promo-guide__step:nth-child(1) {
     border-top-left-radius: 20px;
   }
 
-  .promo-guide__step:nth-of-type(2) {
+  .promo-guide__step:nth-child(2) {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
 
-  .promo-guide__step:nth-of-type(2n) {
+  .promo-guide__step:nth-child(2n) {
     margin-left: -20px;
   }
 
-  .promo-guide__step:not(:nth-of-type(2n)) {
+  .promo-guide__step:not(:nth-child(2n)) {
     width: 250px;
   }
 
@@ -114,7 +113,6 @@
   }
 
   .promo-guide__step::after {
-    content: counter(guide);
     font-size: 30px;
     line-height: 30px;
     position: static;
@@ -152,15 +150,15 @@
     margin-top: 0;
   }
 
-  .promo-guide__step:not(:nth-of-type(4n + 1)) {
+  .promo-guide__step:not(:nth-child(4n + 1)) {
     margin-left: -50px;
   }
 
-  .promo-guide__step:nth-of-type(3n) {
+  .promo-guide__step:nth-child(3n) {
     margin-left: -19px;
   }
 
-  .promo-guide__step:nth-of-type(4n) {
+  .promo-guide__step:nth-child(4n) {
     width: 203px;
     margin-left: -21px;
   }
@@ -173,13 +171,12 @@
     min-height: 78px;
   }
 
-  .promo-guide__step:nth-of-type(4n + 1) {
+  .promo-guide__step:nth-child(4n - 3) {
     padding-left: 35px;
     width: 250px;
   }
 
   .promo-guide__step::after {
-    content: counter(guide);
     font-size: 24px;
     line-height: 24px;
     position: absolute;
@@ -187,11 +184,11 @@
     top: 27px;
   }
 
-  .promo-guide__step:nth-of-type(4n + 1)::after {
+  .promo-guide__step:nth-child(4n - 3)::after {
     right: 85px;
   }
 
-  .promo-guide__step:nth-of-type(4n)::after {
+  .promo-guide__step:nth-child(4n)::after {
     right: 30px;
   }
 }

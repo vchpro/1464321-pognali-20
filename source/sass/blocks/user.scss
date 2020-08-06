@@ -7,12 +7,12 @@
   border-radius: 20px;
 
   &:hover {
-    filter: drop-shadow(0 4px 9px $black-016);
+    box-shadow: 0 4px 9px $black-016;
   }
 }
 
 .user:not(:first-of-type) {
-  margin-top: -9px;
+  margin-top: 11px;
 }
 
 .user:nth-of-type(2) .user__invite {
@@ -40,7 +40,8 @@
   line-height: 20px;
   color: $basic-blue-light;
   width: 106px;
-  padding-top: 12px;
+  display: inline-block;
+  margin-top: 12px;
   margin-left: 105px;
 
   &:hover {
@@ -65,7 +66,6 @@
   position: absolute;
   top: 55px;
   left: 67px;
-  display: none;
 }
 
 .user__tags {
@@ -73,10 +73,9 @@
   font-size: 15px;
   line-height: 18px;
   color: $special-grey;
-  margin-top: 25px;
   width: 176px;
   display: block;
-  padding-top: 20px;
+  margin-top: 23px;
   padding-left: 26px;
 }
 
@@ -86,17 +85,16 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-blue;
-  margin-top: 13px;
-  display: block;
+  margin-top: 22px;
+  display: inline-block;
   text-decoration: none;
   background-color: $basic-yellow;
   border-radius: 25px;
   margin-left: 20px;
+  padding-left: 78px;
+  padding-right: 78px;
   padding-top: 13px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 13px;
 
   &:hover {
     background-color: $special-yellow-dark;

@@ -20,11 +20,11 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  padding-left: 70px;
   color: $basic-blue-light;
   padding-top: 243px;
-  margin: 0;
+  margin: 0 auto;
   display: block;
+  max-width: 132px;
 }
 
 .promo-companion__tags {
@@ -35,9 +35,9 @@
   color: $special-grey;
   margin: 0;
   display: block;
-  width: 188px;
   padding-top: 12px;
-  padding-left: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (min-width: 768px) {
@@ -45,7 +45,7 @@
     font-size: 24px;
     line-height: 22px;
     padding-top: 268px;
-    padding-left: 67px;
+    max-width: 150px;
   }
 
   .promo-companion__tags {
@@ -61,18 +61,14 @@
   }
 
   .promo-companion__content {
-    width: 285px;
+    width: 270px;
     min-height: 198px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
 
-  .promo-companion:nth-of-type(2n + 1) {
-    padding-left: 18px;
-  }
-
   .promo-companion:nth-of-type(2n + 2) {
-    padding-right: 31px;
+    margin-right: 48px;
   }
 
   .promo-companion:not(:first-of-type) {
@@ -90,6 +86,6 @@
   }
 
   .promo-companion:nth-of-type(2n + 2) {
-    padding-right: 10px;
+    margin-right: 10px;
   }
 }
