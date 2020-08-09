@@ -18,9 +18,12 @@
 
 @media (min-width: 1400px) {
   .companions-list {
-    width: 630px;
+    width: 664px;
     grid-column: 2/3;
-    grid-row: 1/5;
-    margin: 0;
+    grid-row: 2/5;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: -25px;
+    margin-left: 14px;
   }
 }

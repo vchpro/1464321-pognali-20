@@ -2,7 +2,6 @@
   font-weight: 500;
   font-size: 16px;
   min-height: 190px;
-  width: 270px;
 }
 
 .direction-country__content {
@@ -60,7 +59,7 @@
 
   .direction-country__content {
     display: block;
-    width: 617px;
+    min-width: 617px;
     min-height: 140px;
     border-radius: 20px;
     position: relative;
@@ -68,12 +67,14 @@
 
   .direction-country:last-of-type .direction-country__content::before {
     content: "";
-    width: 617px;
+    width: 559px;
     height: 70px;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, $white 0, rgba($white, 0.2) 46px);
+    background-image: linear-gradient(to bottom, $white 0, rgba($extra-blue, 0.16) 46px);
+    border-radius: 20px;
     position: absolute;
     bottom: 0;
+    z-index: 100;
   }
 
   .direction-country__heading {
@@ -118,5 +119,9 @@
   .direction-country__people-count {
     padding-left: 63px;
     padding-top: 26px;
+  }
+
+  .direction-country__content {
+    min-width: 559px;
   }
 }

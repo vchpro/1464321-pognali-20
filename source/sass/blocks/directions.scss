@@ -82,23 +82,24 @@
 
 @media (min-width: 1400px) {
   .directions {
-    padding-left: 315px;
+    // Не по центру стоит, поэтому получился такой паддинг
+    padding-left: 180px;
     padding-top: 100px;
     padding-bottom: 138px;
+    width: 1270px;
     grid-template-columns: 559px 500px;
-    justify-content: center;
-    column-gap: 327px;
+    column-gap: 175px;
   }
 
   .directions__heading {
     margin-top: 62px;
     padding-left: 0;
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 1/2;
   }
 
   .directions__about {
-    grid-column: 2/4;
+    grid-column: 2/3;
     padding-left: 0;
     padding-top: 0;
     margin-top: 59px;

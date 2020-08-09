@@ -14,8 +14,6 @@
   margin-top: 27px;
 }
 
-// Что с отступами творится? Либо имя не там стоит, либо левел. Как поправить?
-
 .promo-companion__name {
   font-weight: bold;
   font-size: 21px;
@@ -77,15 +75,7 @@
 }
 
 @media (min-width: 1400px) {
-  .promo-companion:nth-of-type(2n + 1) {
-    padding-left: 6px;
-  }
-
   .promo-companion {
-    padding-top: 70px;
-  }
-
-  .promo-companion:nth-of-type(2n + 2) {
-    margin-right: 10px;
+    padding-top: 0;
   }
 }
