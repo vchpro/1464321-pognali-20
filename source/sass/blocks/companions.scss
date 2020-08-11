@@ -102,9 +102,10 @@
 
 @media (min-width: 1400px) {
   .companions {
-    grid-template-columns: 770px 630px;
+    grid-template-columns: 770px 616px;
     padding-top: 0;
     padding-bottom: 135px;
+    column-gap: 14px;
   }
 
   .companions__heading {

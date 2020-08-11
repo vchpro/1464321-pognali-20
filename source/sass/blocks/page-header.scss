@@ -22,6 +22,10 @@
   display: none;
 }
 
+.page-header__heading {
+  color: $special-orange;
+}
+
 @media (min-width: 768px) {
   .page-header {
     display: grid;
