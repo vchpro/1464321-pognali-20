@@ -1,13 +1,14 @@
 .directions-list {
   list-style: none;
   padding: 0;
-  padding-top: 153px;
+  margin-top: 184px;
   margin-left: 3px;
 }
 
 @media (min-width: 768px) {
   .directions-list {
     padding-top: 90px;
+    margin-top: 15px;
   }
 }
 
@@ -15,8 +16,9 @@
   .directions-list {
     grid-column: 1/2;
     grid-row: 1/4;
-    margin: 0 auto;
-    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
     width: 559px;
   }
 }

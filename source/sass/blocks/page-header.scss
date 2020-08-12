@@ -54,7 +54,8 @@
   .page-header {
     grid-template-columns: 200px 790px 150px 188px;
     justify-content: center;
-    padding-left: 84px;
+    padding-left: 0;
+    margin-left: -2px;
   }
 
   .page-header__burger-menu {

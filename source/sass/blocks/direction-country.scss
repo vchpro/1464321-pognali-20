@@ -11,8 +11,12 @@
   border-radius: 10px;
 }
 
+.direction-country:last-child {
+  min-height: 76px;
+}
+
 .direction-country:not(:first-of-type) {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .direction-country:last-of-type {
@@ -63,6 +67,10 @@
     min-height: 140px;
     border-radius: 20px;
     position: relative;
+  }
+
+  .direction-country:last-child {
+    min-height: 140px;
   }
 
   .direction-country:last-of-type .direction-country__content::before {

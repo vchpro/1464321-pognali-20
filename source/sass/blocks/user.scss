@@ -24,7 +24,7 @@
 }
 
 .user:nth-of-type(4) .user__invite {
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 .user:nth-of-type(2) {
@@ -149,9 +149,11 @@
     margin-right: auto;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 82px;
+    margin-top: 68px;
     margin-left: 29px;
     padding-bottom: 36px;
+    padding-left: 33px;
+    padding-right: 32px;
   }
 
   .user__like {
@@ -180,15 +182,15 @@
   }
 
   .user:nth-of-type(2) .user__invite {
-    margin-top: 82px;
+    margin-top: 68px;
   }
 
   .user:nth-of-type(3) .user__invite {
-    margin-top: 82px;
+    margin-top: 68px;
   }
 
   .user:nth-of-type(4) .user__invite {
-    margin-top: 82px;
+    margin-top: 68px;
   }
 }
 
@@ -236,9 +238,11 @@
   }
 
   .user__invite {
-    margin-top: 94px;
+    margin-top: 82px;
     margin-left: 113px;
     padding-top: 15px;
+    padding-left: 33px;
+    padding-right: 32px;
   }
 
   .user:not(:first-of-type) {
@@ -246,14 +250,14 @@
   }
 
   .user:nth-of-type(2) .user__invite {
-    margin-top: 94px;
+    margin-top: 75px;
   }
 
   .user:nth-of-type(3) .user__invite {
-    margin-top: 90px;
+    margin-top: 75px;
   }
 
   .user:nth-of-type(4) .user__invite {
-    margin-top: 88px;
+    margin-top: 70px;
   }
 }
