@@ -3,37 +3,12 @@
   font-size: 16px;
   line-height: 16px;
   position: relative;
+  padding-top: 15px;
+  border-top: 1px solid $special-light-grey;
 }
 
 .tariff:not(:first-of-type) {
-  margin-top: 28px;
-}
-
-.tariff::after {
-  content: counter(tariff);
-  counter-increment: tariff;
-  position: absolute;
-  top: -11px;
-  right: -26px;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding-top: 9px;
-  padding-left: 13px;
-  color: $white;
-}
-
-.tariff::before {
-  position: absolute;
-  content: "";
-  border: 1px solid $special-light-grey;
-  width: 200px;
-  height: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: -15px;
+  margin-top: 13px;
 }
 
 .tariff:nth-of-type(3n - 3)::after {

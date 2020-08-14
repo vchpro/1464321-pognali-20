@@ -25,11 +25,10 @@
   color: $special-grey;
   width: 220px;
   margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 22px;
 }
 
 .directions__button {
-  display: inline-block;
   text-decoration: none;
   border-radius: 10px;
   background-color: $basic-yellow;
@@ -37,27 +36,25 @@
   font-size: 18px;
   line-height: 18px;
   color: $basic-blue-light;
-  width: 270px;
+  display: block;
   padding-top: 21px;
   padding-bottom: 22px;
   padding-left: 23px;
-  margin-top: 0;
+  margin-top: -10px;
   margin-left: 0;
 }
 
 @media (min-width: 768px) {
   .directions {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 350px;
     display: grid;
-    width: 620px;
     padding-bottom: 80px;
   }
 
   .directions__heading {
     font-size: 45px;
     line-height: 45px;
-    width: 269px;
     margin: 0;
   }
 
@@ -67,7 +64,8 @@
     line-height: 33px;
     padding-top: 57px;
     padding-left: 2px;
-    width: 378px;
+    padding-right: 260px;
+    width: auto;
   }
 
   .directions__button {
@@ -77,15 +75,13 @@
     margin-top: 29px;
     padding-top: 30px;
     padding-left: 33px;
-    min-width: 616px;
     min-height: 30px;
   }
 }
 
 @media (min-width: 1400px) {
   .directions {
-    // Не по центру стоит, поэтому получился такой паддинг
-    padding-left: 90px;
+    padding-left: 175px;
     padding-top: 100px;
     padding-bottom: 138px;
     width: 1270px;
@@ -106,13 +102,15 @@
     padding-top: 0;
     margin-top: 59px;
     margin-left: 2px;
+    padding-right: 120px;
     grid-row: 2/3;
   }
 
   .directions__button {
     grid-row: 3/4;
     grid-column: 2/3;
-    min-width: 200px;
+    width: min-content;
+    min-width: 240px;
     margin-top: 100px;
     margin-left: 0;
     padding-top: 25px;

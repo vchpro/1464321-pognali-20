@@ -1,28 +1,16 @@
 .tariff-list {
   list-style: none;
   padding: 0;
-  padding-top: 38px;
+  padding-top: 23px;
   counter-reset: tariff;
-  position: relative;
-}
-
-.tariff-list::after {
-  position: absolute;
-  content: "";
-  border: 1px solid $special-light-grey;
-  width: 200px;
-  height: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $special-light-grey;
 }
 
 @media (min-width: 768px) {
   .tariff-list {
     margin-top: 55px;
     margin-left: 68px;
-    position: relative;
   }
 
   .tariff-list::after {
@@ -46,7 +34,7 @@
 @media (min-width: 1400px) {
   .tariff-list {
     width: 813px;
-    padding-left: 132px;
+    margin-left: 200px;
     padding-top: 99px;
   }
 

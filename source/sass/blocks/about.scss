@@ -47,8 +47,6 @@
     padding-left: 0;
     padding-right: 420px;
     padding-top: 132px;
-    display: grid;
-    justify-content: center;
     padding-bottom: 90px;
   }
 
@@ -93,7 +91,7 @@
     padding-top: 28px;
     padding-left: 33px;
     margin-top: 53px;
-    margin-left: 120px;
+    margin-left: 284px;
   }
 }
 
@@ -111,18 +109,18 @@
   .about__content {
     width: 619px;
     padding-top: 58px;
-    padding-right: 160px;
+    margin: 0;
+    padding-left: 358px;
   }
 
   .about__content--accent {
     width: 425px;
     padding-top: 40px;
-    padding-right: 350px;
   }
 
   .about__button {
     margin-top: 85px;
-    margin-left: 112px;
+    margin-left: 358px;
   }
 
   .about br {

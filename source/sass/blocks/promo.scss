@@ -27,18 +27,16 @@
   .promo {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 515px 805px;
+    grid-template-columns: 545px 488px 287px;
     justify-content: center;
     padding-top: 93px;
-    padding-right: 92px;
   }
 
   .promo__phrase {
     grid-row: 1/2;
     grid-column: 1/2;
-    display: block;
-    margin-right: 0;
-    margin-left: auto;
+    margin-left: 0;
+    padding-left: 68px;
     text-align: left;
     margin-top: 14px;
   }

@@ -2,7 +2,6 @@
   font-weight: bold;
   position: relative;
   width: 270px;
-  min-height: 415px;
   background-color: $white;
   border-radius: 20px;
 
@@ -64,8 +63,21 @@
   color: $basic-blue;
   margin-top: 9px;
   position: absolute;
-  top: 55px;
-  left: 67px;
+  top: 52px;
+  left: 100px;
+  border: none;
+  background-color: transparent;
+}
+
+.user__like::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: -30px;
+  top: -5px;
+  position: absolute;
+  background-color: $extra-white;
 }
 
 .user__tags {
@@ -95,6 +107,7 @@
   padding-right: 78px;
   padding-top: 13px;
   padding-bottom: 13px;
+  margin-bottom: 23px;
 
   &:hover {
     background-color: $special-yellow-dark;
@@ -112,7 +125,6 @@
     grid-template-columns: 226px 256px 200px;
     grid-template-rows: 95px 96px 80px;
     width: 688px;
-    min-height: 332px;
   }
 
   .user:nth-of-type(2) {
@@ -121,6 +133,25 @@
 
   .user:nth-of-type(4) {
     min-height: 332px;
+  }
+
+  .user__like::before {
+    width: 50px;
+    height: 50px;
+    left: -50px;
+    top: -15px;
+  }
+
+  .user__like {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    margin-top: 80px;
+    left: 35px;
+    top: 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: auto;
   }
 
   .user__name {
@@ -154,12 +185,7 @@
     padding-bottom: 36px;
     padding-left: 33px;
     padding-right: 32px;
-  }
-
-  .user__like {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-left: auto;
+    margin-bottom: 108px;
   }
 
   .user__want-visit {
@@ -203,7 +229,6 @@
 
   .user {
     width: 949px;
-    min-height: 285px;
   }
 
   .user:nth-of-type(2) {
@@ -243,6 +268,7 @@
     padding-top: 15px;
     padding-left: 33px;
     padding-right: 32px;
+    margin-bottom: 48px;
   }
 
   .user:not(:first-of-type) {
@@ -259,5 +285,10 @@
 
   .user:nth-of-type(4) .user__invite {
     margin-top: 70px;
+  }
+
+  .user__like {
+    left: 120px;
+    margin-top: 95px;
   }
 }
