@@ -5,6 +5,7 @@
   counter-reset: tariff;
   padding-bottom: 15px;
   border-bottom: 1px solid $special-light-grey;
+  position: relative;
 }
 
 @media (min-width: 768px) {

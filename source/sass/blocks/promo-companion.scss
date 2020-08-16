@@ -10,16 +10,11 @@
   background-color: $white;
 }
 
-.promo-companion:not(:first-of-type) {
-  margin-top: 27px;
-}
-
 .promo-companion__name {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   color: $basic-blue-light;
-  padding-top: 243px;
   margin: 0 auto;
   display: block;
   max-width: 132px;
@@ -42,7 +37,6 @@
   .promo-companion__name {
     font-size: 24px;
     line-height: 22px;
-    padding-top: 268px;
     max-width: 150px;
   }
 
